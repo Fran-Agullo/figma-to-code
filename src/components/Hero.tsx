@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 export function Hero() {
@@ -91,25 +92,27 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <motion.a
-                href="#contacto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group bg-[#EA580C] text-white px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#C14107] transition-all shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
-                aria-label="Empezar un proyecto con BirdieDigital"
-              >
-                Empezar proyecto
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-              </motion.a>
-              <motion.a
-                href="#portfolio"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-[#e5e7eb] text-[#030711] px-8 py-4 rounded-full hover:border-[#EA580C] hover:text-[#EA580C] transition-all focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
-                aria-label="Ver nuestro portfolio de casos de éxito"
-              >
-                Ver casos de éxito
-              </motion.a>
+              <Link to="/contacto">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group bg-[#EA580C] text-white px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#C14107] transition-all shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
+                  aria-label="Empezar un proyecto con BirdieDigital"
+                >
+                  Empezar proyecto
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                </motion.button>
+              </Link>
+              <Link to="/portfolio">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border-2 border-[#e5e7eb] text-[#030711] px-8 py-4 rounded-full hover:border-[#EA580C] hover:text-[#EA580C] transition-all focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
+                  aria-label="Ver nuestro portfolio de casos de éxito"
+                >
+                  Ver casos de éxito
+                </motion.button>
+              </Link>
             </motion.div>
 
             {/* Stats */}
