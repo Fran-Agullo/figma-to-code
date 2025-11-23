@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { blogPosts } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 
@@ -185,6 +186,7 @@ export default function BlogPost() {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

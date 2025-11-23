@@ -7,6 +7,7 @@ import { Portfolio } from '@/components/Portfolio';
 import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <FAQ />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
