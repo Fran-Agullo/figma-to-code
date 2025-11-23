@@ -39,6 +39,7 @@ export function Header() {
               <NavLink href="#proceso-page">Proceso</NavLink>
               <NavLink href="#portfolio-page">Portfolio</NavLink>
               <NavLink href="#pricing-page">Pricing</NavLink>
+              <NavLink href="/blog">Blog</NavLink>
             </nav>
 
             {/* Actions */}
@@ -113,6 +114,9 @@ export function Header() {
                 </MobileNavLink>
                 <MobileNavLink href="#pricing-page" onClick={() => setIsMenuOpen(false)}>
                   Pricing
+                </MobileNavLink>
+                <MobileNavLink href="/blog" onClick={() => setIsMenuOpen(false)}>
+                  Blog
                 </MobileNavLink>
                 <motion.a
                   href="#contacto"
