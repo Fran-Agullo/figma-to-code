@@ -13,11 +13,11 @@ export function Header() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[95%] lg:max-w-[1240px] px-4"
+        className="sticky top-6 z-50 flex justify-center px-4"
         role="banner"
       >
-        <div className="backdrop-blur-[6px] backdrop-filter bg-[rgba(255,255,255,0.9)] box-border content-stretch flex items-start justify-between px-[17px] py-[7px] relative rounded-[150px] shrink-0">
-          <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.06)] border-solid inset-0 pointer-events-none rounded-[150px]" />
+        <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[17px] py-[7px] rounded-[150px] w-full max-w-[1240px]">
+          <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.08)] border-solid inset-0 pointer-events-none rounded-[150px]" />
 
           {/* Left Container - Logo */}
           <div className="box-border content-stretch flex items-center px-0 py-[10px] relative shrink-0">
@@ -32,7 +32,7 @@ export function Header() {
           </div>
 
           {/* Right Container - Nav & Actions */}
-          <div className="basis-0 content-stretch flex grow items-start justify-end min-h-px min-w-px relative self-stretch shrink-0">
+          <div className="flex items-center justify-end gap-2 flex-1">
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-2" aria-label="Navegación principal">
               <NavLink href="#servicios">Servicios</NavLink>
@@ -96,12 +96,12 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden fixed top-[100px] left-1/2 -translate-x-1/2 z-40 w-full max-w-[95%] px-4"
+            className="lg:hidden fixed top-[100px] z-40 flex justify-center px-4 w-full"
             id="mobile-menu"
             role="navigation"
             aria-label="Menú de navegación móvil"
           >
-            <div className="backdrop-blur-[6px] backdrop-filter bg-[rgba(255,255,255,0.95)] rounded-3xl p-6 border border-[rgba(0,0,0,0.06)]">
+            <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg rounded-3xl p-6 w-full max-w-[500px]">
               <div className="flex flex-col gap-4">
                 <MobileNavLink href="#servicios" onClick={() => setIsMenuOpen(false)}>
                   Servicios
