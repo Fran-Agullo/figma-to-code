@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Sparkles, Globe, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link, useNavigate } from 'react-router-dom';
 import svgPaths from '../imports/svg-3iai6ops00';
 import { BirdieLogo } from './BirdieLogo';
 
@@ -21,42 +22,43 @@ export function Header() {
 
           {/* Left Container - Logo */}
           <div className="box-border content-stretch flex items-center px-0 py-[10px] relative shrink-0">
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center w-[40px] h-[40px]"
-              aria-label="BirdieDigital - Página principal"
-            >
-              <BirdieLogo />
-            </motion.a>
+            <Link to="/">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center w-[40px] h-[40px]"
+                aria-label="BirdieDigital - Página principal"
+              >
+                <BirdieLogo />
+              </motion.div>
+            </Link>
           </div>
 
           {/* Right Container - Nav & Actions */}
           <div className="flex items-center justify-end gap-2 flex-1">
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-2" aria-label="Navegación principal">
-              <NavLink href="#servicios">Servicios</NavLink>
-              <NavLink href="#proceso-page">Proceso</NavLink>
-              <NavLink href="#portfolio-page">Portfolio</NavLink>
-              <NavLink href="#pricing-page">Pricing</NavLink>
+              <NavLink href="/servicios">Servicios</NavLink>
+              <NavLink href="/#proceso">Proceso</NavLink>
+              <NavLink href="/portfolio">Portfolio</NavLink>
               <NavLink href="/blog">Blog</NavLink>
             </nav>
 
             {/* Actions */}
             <div className="flex items-center gap-2">
               {/* Contact Button */}
-              <motion.a
-                href="#contacto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="hidden sm:flex box-border content-stretch items-center justify-center min-h-[50px] pb-[15.5px] pt-[14.5px] px-[22px] relative rounded-[100px] shrink-0"
-                aria-label="Ir a sección de contacto"
-              >
-                <div aria-hidden="true" className="absolute border-2 border-[#EA580C] border-solid inset-0 pointer-events-none rounded-[100px]" />
-                <span className="font-['Manrope',sans-serif] font-semibold text-[15px] text-[#EA580C] whitespace-nowrap">
-                  Contacto →
-                </span>
-              </motion.a>
+              <Link to="/contacto" className="hidden sm:flex">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="box-border content-stretch flex items-center justify-center min-h-[50px] pb-[15.5px] pt-[14.5px] px-[22px] relative rounded-[100px] shrink-0"
+                  aria-label="Ir a página de contacto"
+                >
+                  <div aria-hidden="true" className="absolute border-2 border-[#EA580C] border-solid inset-0 pointer-events-none rounded-[100px]" />
+                  <span className="font-['Manrope',sans-serif] font-semibold text-[15px] text-[#EA580C] whitespace-nowrap">
+                    Contacto →
+                  </span>
+                </motion.div>
+              </Link>
 
               {/* Mobile Menu Button */}
               <button
@@ -103,31 +105,28 @@ export function Header() {
           >
             <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg rounded-3xl p-6 w-full max-w-[500px]">
               <div className="flex flex-col gap-4">
-                <MobileNavLink href="#servicios" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink href="/servicios" onClick={() => setIsMenuOpen(false)}>
                   Servicios
                 </MobileNavLink>
-                <MobileNavLink href="#proceso-page" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink href="/#proceso" onClick={() => setIsMenuOpen(false)}>
                   Proceso
                 </MobileNavLink>
-                <MobileNavLink href="#portfolio-page" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink href="/portfolio" onClick={() => setIsMenuOpen(false)}>
                   Portfolio
-                </MobileNavLink>
-                <MobileNavLink href="#pricing-page" onClick={() => setIsMenuOpen(false)}>
-                  Pricing
                 </MobileNavLink>
                 <MobileNavLink href="/blog" onClick={() => setIsMenuOpen(false)}>
                   Blog
                 </MobileNavLink>
-                <motion.a
-                  href="#contacto"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="bg-[#EA580C] text-white px-6 py-3 rounded-full text-center font-semibold mt-2 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
-                  onClick={() => setIsMenuOpen(false)}
-                  aria-label="Ir a sección de contacto"
-                >
-                  Contacto →
-                </motion.a>
+                <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="bg-[#EA580C] text-white px-6 py-3 rounded-full text-center font-semibold mt-2 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
+                    aria-label="Ir a página de contacto"
+                  >
+                    Contacto →
+                  </motion.div>
+                </Link>
               </div>
             </div>
           </motion.div>
