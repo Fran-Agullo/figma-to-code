@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BlogCard } from '@/components/BlogCard';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { blogPosts, categories } from '@/data/blogPosts';
 
 export default function Blog() {
@@ -77,6 +78,7 @@ export default function Blog() {
       </main>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
