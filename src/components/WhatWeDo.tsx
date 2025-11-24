@@ -3,7 +3,6 @@ import { Target, TrendingUp, Lightbulb, Zap, Rocket, BarChart3, CheckCircle2, Ar
 import { services as servicesData } from '../data/services';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 
 const iconMap: Record<string, any> = {
   Target,
@@ -48,42 +47,37 @@ export function WhatWeDo() {
               const IconComponent = service.icon;
               return (
                 <motion.div
-                  key={index} 
-                  initial={{ opacity: 0, y: 50 }} 
+                  key={service.id} 
+                  initial={{ opacity: 0, y: 30 }} 
                   whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }} 
                 >
-                  <Card className="group h-full flex flex-col bg-white hover:border-[#EA580C]/30 hover:shadow-2xl transition-all duration-300">
-                    <CardHeader className="space-y-4">
-                      <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center">
+                  <Card className="h-full hover:shadow-2xl transition-shadow border-gray-100 hover:border-[#EA580C]/20">
+                    <CardHeader>
+                      <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center mb-4">
                         <IconComponent className="w-7 h-7 text-[#EA580C]" />
                       </div>
-                      <div>
-                        <CardTitle className="text-xl text-[#030711] mb-2">{service.title}</CardTitle>
-                        <CardDescription className="text-[#666666] leading-relaxed">
-                          {service.description}
-                        </CardDescription>
-                      </div>
+                      <CardTitle className="text-2xl">{service.title}</CardTitle>
+                      <CardDescription className="text-base">
+                        {service.description}
+                      </CardDescription>
                     </CardHeader>
-                    <CardContent className="flex-1 flex flex-col justify-between space-y-6">
-                      <ul className="space-y-3">
+                    <CardContent>
+                      <div className="space-y-2 mb-6">
                         {service.features.slice(0, 4).map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-[#666666]">
+                          <div key={idx} className="flex items-start gap-2">
                             <CheckCircle2 className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
-                            <span>{feature}</span>
-                          </li>
+                            <span className="text-sm text-[#030711]">{feature}</span>
+                          </div>
                         ))}
-                      </ul>
-                      <Link to={`/servicios#${service.id}`}>
-                        <Button 
-                          variant="outline" 
-                          className="w-full group-hover:bg-[#EA580C]/5 group-hover:border-[#EA580C]/50 transition-colors"
-                        >
+                      </div>
+                      <Button variant="outline" className="w-full" asChild>
+                        <a href={`/servicios#${service.id}`}>
                           Ver detalles
-                          <ArrowRight className="w-4 h-4" />
-                        </Button>
-                      </Link>
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </a>
+                      </Button>
                     </CardContent>
                   </Card>
                 </motion.div>
