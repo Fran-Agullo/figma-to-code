@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
-import { Target, TrendingUp, Lightbulb, Zap, Rocket, BarChart3 } from 'lucide-react';
+import { Target, TrendingUp, Lightbulb, Zap, Rocket, BarChart3, CheckCircle2, ArrowRight } from 'lucide-react';
 import { services as servicesData } from '../data/services';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const iconMap: Record<string, any> = {
   Target,
@@ -40,28 +43,50 @@ export function WhatWeDo() {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <motion.article 
+                <motion.div
                   key={index} 
                   initial={{ opacity: 0, y: 50 }} 
                   whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }} 
-                  className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-[#EA580C]/30 hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <IconComponent className="w-7 h-7 text-[#EA580C]" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl text-[#030711] font-semibold mb-2">{service.title}</h3>
-                      <p className="text-[#666666] leading-relaxed">{service.description}</p>
-                    </div>
-                  </div>
-                </motion.article>
+                  <Card className="group h-full flex flex-col bg-white hover:border-[#EA580C]/30 hover:shadow-2xl transition-all duration-300">
+                    <CardHeader className="space-y-4">
+                      <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center">
+                        <IconComponent className="w-7 h-7 text-[#EA580C]" />
+                      </div>
+                      <div>
+                        <CardTitle className="text-xl text-[#030711] mb-2">{service.title}</CardTitle>
+                        <CardDescription className="text-[#666666] leading-relaxed">
+                          {service.description}
+                        </CardDescription>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-1 flex flex-col justify-between space-y-6">
+                      <ul className="space-y-3">
+                        {service.features.slice(0, 4).map((feature, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-[#666666]">
+                            <CheckCircle2 className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Link to={`/servicios#${service.id}`}>
+                        <Button 
+                          variant="outline" 
+                          className="w-full group-hover:bg-[#EA580C]/5 group-hover:border-[#EA580C]/50 transition-colors"
+                        >
+                          Ver detalles
+                          <ArrowRight className="w-4 h-4" />
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               );
             })}
           </div>
