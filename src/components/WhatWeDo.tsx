@@ -33,8 +33,8 @@ export function WhatWeDo() {
           <p className="text-[#757575] text-sm mb-4 tracking-wide uppercase font-semibold">
             ¿Qué hacemos?
           </p>
-          <h2 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">
-            Solucines estrategia de growth para tu empresa diseñada por expertos. <span className="text-[#EA580C]">estrategia de growth</span> para tu empresa diseñada por expertos.
+          <h2 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">Soluciones escalables, 
+visión 360º<span className="text-[#EA580C]">estrategia de growth</span> para tu empresa diseñada por expertos.
           </h2>
         </motion.div>
 
