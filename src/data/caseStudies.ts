@@ -1,3 +1,5 @@
+import nibaHero from '@/assets/niba-hero.png';
+
 export interface CaseStudy {
   id: string;
   title: string;
@@ -54,9 +56,9 @@ export const caseStudies: CaseStudy[] = [
       teamSize: '6 personas'
     },
     tags: ['Diseño Web', 'SEO', 'UX/UI'],
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGVuZXJneXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: nibaHero,
     images: {
-      hero: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGVuZXJneXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: nibaHero
     },
     testimonial: {
       text: 'BirdieAgency transformó completamente nuestra presencia digital. El nuevo sitio web no solo es visualmente impresionante, sino que ha multiplicado nuestras conversiones. Su comprensión del sector energético fue clave.',
