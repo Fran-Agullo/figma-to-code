@@ -53,7 +53,7 @@ export function Hero() {
               role="text"
             >
               <Sparkles className="w-4 h-4 text-[#EA580C]" aria-hidden="true" />
-              <span className="text-sm text-[#EA580C] font-medium">Growth Digital Inteligente</span>
+              <span className="text-sm text-[#EA580C] font-medium">BirdieAgency</span>
             </motion.div>
 
             <div className="space-y-4">

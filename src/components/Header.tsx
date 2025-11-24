@@ -37,10 +37,10 @@ export function Header() {
           <div className="flex items-center justify-end gap-2 flex-1">
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-2" aria-label="Navegación principal">
+              <NavLink to="/">Inicio</NavLink>
               <NavLink to="/servicios">Servicios</NavLink>
-              <NavLink to="/#proceso">Proceso</NavLink>
-              <NavLink to="/portfolio">Portfolio</NavLink>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/portfolio">Proyectos</NavLink>
+              <NavLink to="/sobre-nosotros">Sobre nosotros</NavLink>
             </nav>
 
             {/* Actions */}
@@ -55,7 +55,7 @@ export function Header() {
                 >
                   <div aria-hidden="true" className="absolute border-2 border-[#EA580C] border-solid inset-0 pointer-events-none rounded-[100px]" />
                   <span className="font-['Manrope',sans-serif] font-semibold text-[15px] text-[#EA580C] whitespace-nowrap">
-                    Contacto →
+                    Contactanos
                   </span>
                 </motion.div>
               </Link>
@@ -105,17 +105,17 @@ export function Header() {
           >
             <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg rounded-3xl p-6 w-full max-w-[500px]">
               <div className="flex flex-col gap-4">
+                <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>
+                  Inicio
+                </MobileNavLink>
                 <MobileNavLink to="/servicios" onClick={() => setIsMenuOpen(false)}>
                   Servicios
                 </MobileNavLink>
-                <MobileNavLink to="/#proceso" onClick={() => setIsMenuOpen(false)}>
-                  Proceso
-                </MobileNavLink>
                 <MobileNavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
-                  Portfolio
+                  Proyectos
                 </MobileNavLink>
-                <MobileNavLink to="/blog" onClick={() => setIsMenuOpen(false)}>
-                  Blog
+                <MobileNavLink to="/sobre-nosotros" onClick={() => setIsMenuOpen(false)}>
+                  Sobre nosotros
                 </MobileNavLink>
                 <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
                   <motion.div
@@ -124,7 +124,7 @@ export function Header() {
                     className="bg-[#EA580C] text-white px-6 py-3 rounded-full text-center font-semibold mt-2 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
                     aria-label="Ir a página de contacto"
                   >
-                    Contacto →
+                    Contactanos
                   </motion.div>
                 </Link>
               </div>
