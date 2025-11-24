@@ -139,7 +139,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 'greenlife',
     title: 'Facilitea',
-    subtitle: 'Transformar la fricción digital de Facilitea en un activo de crecimiento sostenible, unificando la marca y el producto a través de un Diseño Estratégico 360°',
+    subtitle: 'Diseño Estratégico 360° para unificar marca y producto digital',
     client: 'Facilitea',
     industry: 'Diseño Estratégico / E-commerce / Growth Digital',
     description: 'Facilitea se enfrentaba a un producto digital que generaba fricción y confusión en sus usuarios, afectando directamente las tasas de conversión y retención. La falta de un sistema de diseño centralizado causaba inconsistencia visual y técnica, traduciéndose en altos costos de desarrollo y mantenimiento, y limitando seriamente su capacidad de crecimiento digital. Necesitaban una transformación holística que unificara la experiencia de marca y el producto.',

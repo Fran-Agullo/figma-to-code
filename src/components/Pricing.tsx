@@ -62,8 +62,8 @@ export function Pricing() {
           viewport={{ once: true }} 
           className="text-center mb-16"
         >
-          <h2 className="text-5xl text-[#030711] tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
-            Pricing
+          <h2 className="text-5xl tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
+            <span className="text-[#030711]">Pri</span><span className="text-[#EA580C]">cing</span>
           </h2>
           <p className="text-lg text-[#64748b] max-w-2xl mx-auto">
             Transparent pricing, no surprises. Choose a plan that fits your needs and scale up whenever you're ready.
