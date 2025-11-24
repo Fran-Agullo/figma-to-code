@@ -30,12 +30,12 @@ export function WhatWeDo() {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <p className="text-[#757575] text-sm mb-4 tracking-wide uppercase font-semibold">
-            ¿Qué hacemos?
-          </p>
-          <h2 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">Soluciones escalables, 
-visión 360º<span className="text-[#EA580C]">estrategia de growth</span> para tu empresa diseñada por expertos.
+          <h2 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">
+            Servicios
           </h2>
+          <p className="text-lg text-[#666666] max-w-2xl mx-auto">
+            Explora nuestros servicios y impulsan tu negocio. Diseño, estrategia y automatización para crecer con eficiencia y resultados medibles.
+          </p>
         </motion.div>
 
         {/* Services Grid */}
