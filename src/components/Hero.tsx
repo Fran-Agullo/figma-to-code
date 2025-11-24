@@ -2,10 +2,17 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 export function Hero() {
-  return <section className="relative min-h-screen px-6 lg:px-12 overflow-hidden flex items-center pt-20" aria-labelledby="hero-heading">
+  return <section className="relative pt-32 pb-20 px-6 lg:px-12 overflow-hidden" aria-labelledby="hero-heading">
       {/* Video background */}
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" poster="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-poster-00001.jpg">
+      <div className="absolute inset-0" aria-hidden="true">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          poster="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-poster-00001.jpg"
+        >
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.mp4" type="video/mp4" />
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.webm" type="video/webm" />
         </video>
@@ -14,7 +21,7 @@ export function Hero() {
       </div>
 
       <div className="relative max-w-[1440px] mx-auto">
-        <div className="flex items-start justify-start">
+        <div className="flex justify-center items-center">
           {/* Center Content */}
           <motion.div initial={{
           opacity: 0,
@@ -26,7 +33,19 @@ export function Hero() {
           duration: 0.8,
           ease: 'easeOut'
         }} className="space-y-8 max-w-4xl text-center">
-            
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            delay: 0.2,
+            duration: 0.6
+          }} className="inline-flex items-center gap-2 bg-[#EA580C]/20 px-4 py-2 rounded-full border border-[#EA580C]/30 mx-auto" role="text">
+              <Sparkles className="w-4 h-4 text-[#EA580C]" aria-hidden="true" />
+              <span className="text-sm text-white font-medium">BirdieAgency</span>
+            </motion.div>
 
             <div className="space-y-4">
               <h1 id="hero-heading" className="text-5xl lg:text-7xl text-white tracking-tight leading-[1.1] font-bold">
@@ -51,7 +70,7 @@ export function Hero() {
               }} transition={{
                 delay: 0.4,
                 duration: 0.6
-              }} className="block text-left">
+              }} className="block">
                   Mira hacia el <span className="text-[#EA580C]">futuro.</span>
                 </motion.span>
               </h1>
@@ -66,7 +85,7 @@ export function Hero() {
           }} transition={{
             delay: 0.6,
             duration: 0.6
-          }} className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto text-left">
+          }} className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               En BirdieAgency transformamos la confusión y la fricción digital en experiencias de marca claras, memorables y funcionales. Diseño, usabilidad y análisis, impulsamos empresas en entornos digitales.
             </motion.p>
 
@@ -79,7 +98,7 @@ export function Hero() {
           }} transition={{
             delay: 0.7,
             duration: 0.6
-          }} className="flex-col sm:flex-row gap-4 flex items-start justify-start">
+          }} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contacto">
                 <motion.button whileHover={{
                 scale: 1.05
@@ -91,12 +110,40 @@ export function Hero() {
                 </motion.button>
               </Link>
               <Link to="/portfolio">
-                
+                <motion.button whileHover={{
+                scale: 1.05
+              }} whileTap={{
+                scale: 0.95
+              }} className="border-2 border-white/20 text-white px-8 py-4 rounded-full hover:border-[#EA580C] hover:bg-[#EA580C]/10 transition-all focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2 focus:ring-offset-[#1a1a2e]" aria-label="Ver nuestro portfolio de casos de éxito">
+                  Ver casos de éxito
+                </motion.button>
               </Link>
             </motion.div>
 
             {/* Stats */}
-            
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            delay: 0.8,
+            duration: 0.6
+          }} role="list" aria-label="Estadísticas de BirdieAgency" className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20 max-w-2xl mx-auto">
+              <div role="listitem">
+                <div className="text-3xl text-white font-medium">+42%</div>
+                <div className="text-sm text-gray-400 mt-1">Eficiencia</div>
+              </div>
+              <div role="listitem">
+                <div className="text-3xl text-white font-medium">24h</div>
+                <div className="text-sm text-gray-400 mt-1">Research</div>
+              </div>
+              <div role="listitem">
+                <div className="text-3xl text-white font-medium">48h</div>
+                <div className="text-sm text-gray-400 mt-1">Diagnóstico</div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
