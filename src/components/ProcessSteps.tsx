@@ -12,8 +12,8 @@ export function ProcessSteps() {
     <section id="proceso" className="py-24 px-6 lg:px-12 bg-white">
       <div className="max-w-[1440px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-          <h2 className="text-5xl text-[#030711] tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
-            Soluciones escalables, visión 360º
+          <h2 className="text-5xl tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
+            <span className="text-[#030711]">Soluciones </span><span className="text-[#EA580C]">escalables</span><span className="text-[#030711]">, visión </span><span className="text-[#EA580C]">360º</span>
           </h2>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto">
             Creemos que un diseño estratégico no es un costo, sino el activo más poderoso para comunicar valor, generar confianza y simplificar procesos complejos.
