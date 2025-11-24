@@ -140,10 +140,10 @@ export const caseStudies: CaseStudy[] = [
     id: 'greenlife',
     title: 'Facilitea',
     subtitle: 'E-commerce de productos sostenibles',
-    client: 'GreenLife',
+    client: 'Facilitea',
     industry: 'E-commerce / Sostenibilidad',
-    description: 'GreenLife es un e-commerce especializado en productos eco-friendly y sostenibles para el hogar y cuidado personal. Trabajamos en comunicar sus valores de sostenibilidad mientras escalaban ventas de forma rentable.',
-    challenge: 'GreenLife tenía una audiencia apasionada pero pequeña. El desafío era escalar sin diluir su mensaje de sostenibilidad y mantener márgenes saludables en un mercado donde los productos eco-friendly suelen tener mayor costo. La competencia de Amazon y retailers tradicionales que empezaban a ofrecer productos "verdes" complicaba la diferenciación.',
+    description: 'Facilitea es un e-commerce especializado en productos eco-friendly y sostenibles para el hogar y cuidado personal. Trabajamos en comunicar sus valores de sostenibilidad mientras escalaban ventas de forma rentable.',
+    challenge: 'Facilitea tenía una audiencia apasionada pero pequeña. El desafío era escalar sin diluir su mensaje de sostenibilidad y mantener márgenes saludables en un mercado donde los productos eco-friendly suelen tener mayor costo. La competencia de Amazon y retailers tradicionales que empezaban a ofrecer productos "verdes" complicaba la diferenciación.',
     solution: 'Construimos una estrategia de contenido centrada en educación sobre sostenibilidad y impacto ambiental. Creamos una comunidad en redes sociales con contenido generado por usuarios mostrando su transición a vida sostenible. Implementamos SEO para búsquedas de productos específicos eco-friendly, desarrollamos colaboraciones con influencers de sostenibilidad auténticos, y creamos un programa de fidelización que recompensaba comportamientos sostenibles. Optimizamos el packaging y comunicamos el impacto positivo de cada compra.',
     results: [
       'Crecimiento del 450% en ventas anuales',
@@ -167,7 +167,7 @@ export const caseStudies: CaseStudy[] = [
     testimonial: {
       text: 'BirdieAgency nos ayudó a escalar manteniendo intactos nuestros valores de sostenibilidad. No solo crecimos en ventas, sino que construimos una comunidad leal y comprometida.',
       author: 'Lucía Vega',
-      position: 'Fundadora, GreenLife'
+      position: 'Fundadora, Facilitea'
     }
   },
   {
