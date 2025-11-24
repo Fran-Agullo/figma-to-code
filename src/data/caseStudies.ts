@@ -31,207 +31,207 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: 'depasify',
-    title: 'Depasify',
-    subtitle: 'Web3 / Blockchain core banking solution',
-    client: 'Depasify Technologies',
-    industry: 'Fintech / Blockchain',
-    description: 'Depasify es una plataforma innovadora de core banking basada en blockchain que revoluciona la forma en que las instituciones financieras gestionan sus operaciones. Nuestro desafío fue crear una experiencia de usuario intuitiva para una tecnología compleja, aumentando la adopción del producto en un mercado altamente competitivo.',
-    challenge: 'El principal desafío fue posicionar una solución de core banking basada en blockchain en un mercado tradicional y conservador. Las instituciones financieras mostraban resistencia a adoptar nuevas tecnologías debido a preocupaciones sobre seguridad, compliance y la curva de aprendizaje. Además, el producto necesitaba comunicar claramente sus ventajas sobre sistemas legacy sin abrumar con tecnicismos.',
-    solution: 'Desarrollamos una estrategia integral de growth digital centrada en educación y confianza. Creamos contenido técnico accesible, implementamos demos interactivas que mostraban el valor real del producto, y optimizamos el funnel de conversión con nurturing personalizado. Lanzamos campañas dirigidas a decision-makers en fintech, complementadas con webinars y casos de uso específicos para diferentes tipos de instituciones financieras.',
+    id: 'niba-energia',
+    title: 'Niba Energía',
+    subtitle: 'Transformación digital en el sector energético',
+    client: 'Niba Energía',
+    industry: 'Energía / Sostenibilidad',
+    description: 'Niba Energía es una compañía innovadora que ofrece soluciones energéticas sostenibles para hogares y empresas. Trabajamos en su transformación digital completa, desde el rediseño de su presencia online hasta la optimización de su embudo de conversión.',
+    challenge: 'Niba Energía tenía una presencia digital obsoleta que no comunicaba adecuadamente su propuesta de valor diferencial en energías renovables. La tasa de conversión web era solo del 0.8% y el 73% de los usuarios abandonaban el proceso de solicitud de presupuesto. Además, competían con grandes empresas energéticas tradicionales con presupuestos significativamente mayores.',
+    solution: 'Rediseñamos completamente su experiencia digital con un enfoque en claridad y usabilidad. Creamos un sitio web moderno que explica de forma visual y sencilla los beneficios de cambiar a energía renovable. Implementamos una calculadora interactiva de ahorro energético, optimizamos el formulario de solicitud de presupuesto reduciéndolo de 15 a 4 campos esenciales, y desarrollamos una estrategia de contenido SEO centrada en búsquedas locales y educación energética.',
     results: [
-      'Incremento del 340% en leads cualificados durante los primeros 6 meses',
-      'Reducción del 60% en el tiempo del ciclo de ventas gracias a contenido educativo estratégico',
-      'ROI de 8.2x en inversión de marketing digital',
-      '25 nuevas instituciones financieras adoptaron la plataforma',
-      'Tasa de conversión de demo a cliente de 42%, superando el benchmark de la industria',
-      'Posicionamiento como top 3 en búsquedas orgánicas para "blockchain core banking"'
+      'Aumento del 380% en solicitudes de presupuesto cualificadas',
+      'Tasa de conversión mejorada del 0.8% al 3.4%',
+      'Reducción del 65% en la tasa de abandono del formulario',
+      'ROI de 9.2x en inversión de marketing digital',
+      'Incremento del 420% en tráfico orgánico en 8 meses',
+      'Posicionamiento en primera página para +85 términos de búsqueda relacionados con energía renovable'
     ],
     metrics: {
-      growth: '+340%',
-      roi: '8.2x',
-      timeline: '6 meses',
-      teamSize: '8 personas'
-    },
-    tags: ['Blockchain', 'SaaS', 'Fintech'],
-    image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYzNzk2ODc3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    images: {
-      hero: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYzNzk2ODc3fDA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    testimonial: {
-      text: 'BirdieDigital transformó completamente nuestra estrategia de go-to-market. Su comprensión del sector fintech y blockchain fue clave para comunicar nuestro valor de forma clara y alcanzar nuestros objetivos de crecimiento.',
-      author: 'Laura Martínez',
-      position: 'CEO, Depasify Technologies'
-    }
-  },
-  {
-    id: 'fintechflow',
-    title: 'FintechFlow',
-    subtitle: 'Plataforma de pagos instantáneos',
-    client: 'FintechFlow LATAM',
-    industry: 'Fintech / Pagos',
-    description: 'FintechFlow es una plataforma de pagos instantáneos que permite transacciones en tiempo real entre usuarios y comercios en toda América Latina. Trabajamos en escalar su base de usuarios y mejorar la activación de nuevos usuarios en los primeros 7 días.',
-    challenge: 'FintechFlow enfrentaba dos desafíos críticos: baja tasa de activación de usuarios nuevos (solo 28% completaban su primera transacción) y alto costo de adquisición de clientes. El mercado de pagos digitales en LATAM es extremadamente competitivo, con grandes jugadores establecidos, lo que dificultaba la diferenciación y el crecimiento orgánico.',
-    solution: 'Rediseñamos completamente el onboarding de usuarios con un enfoque en reducir la fricción y aumentar el "aha moment" temprano. Implementamos gamificación, incentivos progresivos y un sistema de referidos viral. En marketing, creamos campañas hiperlocalizadas por país, optimizamos el SEO para búsquedas transaccionales, y desarrollamos alianzas estratégicas con e-commerce y marketplaces para integración nativa.',
-    results: [
-      'Aumento del 580% en usuarios activos mensuales en 8 meses',
-      'Tasa de activación mejorada del 28% al 71% en los primeros 7 días',
-      'Reducción del 45% en el CAC (Costo de Adquisición de Cliente)',
-      'ROI de 12.5x en campañas de performance marketing',
-      'Programa de referidos generó el 38% de nuevos usuarios con costo cero',
-      'Expansión exitosa a 5 nuevos países en LATAM'
-    ],
-    metrics: {
-      growth: '+580%',
-      roi: '12.5x',
+      growth: '+380%',
+      roi: '9.2x',
       timeline: '8 meses',
-      teamSize: '10 personas'
-    },
-    tags: ['Fintech', 'Product', 'Growth'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzgyNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080',
-    images: {
-      hero: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzgyNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    testimonial: {
-      text: 'El equipo de Birdie no solo nos ayudó a crecer, sino que nos enseñó a pensar como una empresa data-driven. Sus estrategias de growth hacking fueron fundamentales para nuestro éxito en LATAM.',
-      author: 'Carlos Rodríguez',
-      position: 'Head of Growth, FintechFlow'
-    }
-  },
-  {
-    id: 'healthtech-pro',
-    title: 'HealthTech Pro',
-    subtitle: 'Telemedicina de nueva generación',
-    client: 'HealthTech Pro Inc.',
-    industry: 'HealthTech / Telemedicina',
-    description: 'HealthTech Pro es una plataforma de telemedicina que conecta pacientes con profesionales de la salud mediante videoconsultas, recetas digitales y seguimiento continuo. Nuestro objetivo fue aumentar la confianza en el servicio y escalar las consultas realizadas.',
-    challenge: 'La adopción de telemedicina requiere superar barreras de confianza significativas. Los usuarios potenciales dudaban sobre la calidad de atención virtual comparada con consultas presenciales. Además, la competencia de plataformas establecidas y la necesidad de cumplir con regulaciones estrictas de salud complicaban el posicionamiento y la comunicación del servicio.',
-    solution: 'Construimos una estrategia de contenido centrada en educación médica y testimonios reales de pacientes. Optimizamos el SEO para búsquedas médicas específicas, creamos contenido en video con profesionales de la salud explicando beneficios de la telemedicina, y desarrollamos un programa de embajadores con médicos influyentes. Implementamos un sistema de agendamiento intuitivo con recordatorios automáticos y seguimiento post-consulta.',
-    results: [
-      'Crecimiento del 425% en consultas completadas mensualmente',
-      'Tasa de satisfacción del paciente: 4.8/5 estrellas',
-      'Red de profesionales de la salud expandida en 280%',
-      'ROI de 9.8x en inversión de marketing digital',
-      'Reducción del 52% en la tasa de cancelación de citas mediante sistema de recordatorios',
-      'Posicionamiento orgánico en primera página para más de 150 términos médicos'
-    ],
-    metrics: {
-      growth: '+425%',
-      roi: '9.8x',
-      timeline: '7 meses',
       teamSize: '6 personas'
     },
-    tags: ['HealthTech', 'Mobile', 'SaaS'],
-    image: 'https://images.unsplash.com/photo-1739298061707-cefee19941b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjM3MTgxMzB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Diseño Web', 'SEO', 'UX/UI'],
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGVuZXJneXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: {
-      hero: 'https://images.unsplash.com/photo-1739298061707-cefee19941b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NjM3MTgxMzB8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxzb2xhciUyMGVuZXJneXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     testimonial: {
-      text: 'Birdie entendió perfectamente los desafíos únicos del sector salud. Su enfoque en generar confianza y educar al mercado fue exactamente lo que necesitábamos para escalar.',
-      author: 'Dra. Ana Sánchez',
-      position: 'Directora Médica, HealthTech Pro'
+      text: 'BirdieAgency transformó completamente nuestra presencia digital. El nuevo sitio web no solo es visualmente impresionante, sino que ha multiplicado nuestras conversiones. Su comprensión del sector energético fue clave.',
+      author: 'Carmen Ruiz',
+      position: 'Directora de Marketing, Niba Energía'
     }
   },
   {
-    id: 'retailhub',
-    title: 'RetailHub',
-    subtitle: 'E-commerce omnicanal sin fricción',
-    client: 'RetailHub Corp',
-    industry: 'E-commerce / Retail',
-    description: 'RetailHub es una plataforma omnicanal que unifica la experiencia de compra online y offline para retailers. Trabajamos en aumentar la adopción entre retailers tradicionales y optimizar la conversión en el canal digital.',
-    challenge: 'Los retailers tradicionales mostraban resistencia a digitalizar sus operaciones por miedo a la complejidad técnica y el costo de implementación. El producto necesitaba demostrar ROI rápido y facilidad de uso. Adicionalmente, competir contra soluciones establecidas como Shopify requería una diferenciación clara.',
-    solution: 'Desarrollamos una estrategia ABM (Account-Based Marketing) dirigida a retailers medianos y grandes. Creamos casos de estudio específicos por vertical (moda, electrónica, hogar) mostrando ROI en 90 días. Implementamos demos personalizadas, trials gratuitos con onboarding asistido, y un programa de partners para facilitar la implementación técnica. Optimizamos las campañas de PPC y creamos contenido sobre transformación digital en retail.',
+    id: 'techstore',
+    title: 'TechStore',
+    subtitle: 'E-commerce de electrónica de alta conversión',
+    client: 'TechStore',
+    industry: 'E-commerce / Tecnología',
+    description: 'TechStore es un e-commerce especializado en productos de tecnología y electrónica. Optimizamos su plataforma para aumentar conversiones durante campañas estratégicas como Black Friday y mejorar la experiencia de compra omnicanal.',
+    challenge: 'TechStore experimentaba altas tasas de abandono de carrito (78%) y dificultades para gestionar picos de tráfico durante eventos como Black Friday. Su plataforma era lenta, el proceso de checkout tenía 6 pasos, y carecían de estrategias de remarketing efectivas. Además, competían con gigantes como Amazon en un mercado altamente competitivo.',
+    solution: 'Realizamos una optimización técnica completa de la plataforma, mejorando velocidad de carga en un 65%. Rediseñamos el flujo de compra implementando un checkout en un solo paso, integramos múltiples métodos de pago incluyendo wallets digitales, y creamos una estrategia de remarketing dinámica con carritos abandonados. Desarrollamos campañas específicas para Black Friday con landing pages optimizadas y sistema de urgencia en tiempo real.',
     results: [
-      'Aumento del 290% en retailers activos en la plataforma',
-      'Conversión de trial a cliente pagado: 58%',
-      'ROI promedio de clientes en primeros 90 días: 4.2x',
-      'Ingresos recurrentes (MRR) crecieron 310%',
-      'Tasa de retención mejorada del 67% al 89%',
-      'Expansión a 12 nuevas verticales de retail'
+      'Reducción del 52% en abandono de carrito',
+      'Aumento del 290% en ventas durante Black Friday 2024',
+      'Conversión general mejorada del 1.2% al 3.8%',
+      'Ticket promedio aumentó un 34% gracias a upselling inteligente',
+      'ROI de 12.8x en campañas de remarketing',
+      'Velocidad de carga mejorada de 4.2s a 1.3s'
     ],
     metrics: {
       growth: '+290%',
-      roi: '6.7x',
+      roi: '12.8x',
+      timeline: '5 meses',
+      teamSize: '8 personas'
+    },
+    tags: ['E-commerce', 'Conversión', 'Performance'],
+    image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080',
+    images: {
+      hero: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    testimonial: {
+      text: 'Los resultados de nuestra campaña de Black Friday superaron todas las expectativas. BirdieAgency no solo optimizó nuestra plataforma, sino que nos enseñó a pensar estratégicamente sobre cada punto del funnel de conversión.',
+      author: 'Jorge Mendoza',
+      position: 'CEO, TechStore'
+    }
+  },
+  {
+    id: 'homefix',
+    title: 'HomeFix',
+    subtitle: 'Plataforma de servicios para el hogar',
+    client: 'HomeFix',
+    industry: 'Marketplace / Servicios',
+    description: 'HomeFix es una plataforma digital que conecta profesionales de servicios del hogar (fontaneros, electricistas, pintores) con clientes que necesitan reparaciones. Trabajamos en escalar su base de usuarios en ambos lados del marketplace.',
+    challenge: 'HomeFix enfrentaba el clásico problema del huevo y la gallina: necesitaban más profesionales para atraer clientes, y más clientes para atraer profesionales. La calidad de los servicios era inconsistente, generando reseñas mixtas. Además, la competencia de plataformas establecidas y el modelo de negocio que requería verificación de profesionales complicaba el crecimiento rápido.',
+    solution: 'Implementamos una estrategia de growth dual: para profesionales, creamos un programa de embajadores con los mejores valorados, simplificamos el proceso de onboarding y ofrecimos sus primeros 3 trabajos sin comisión. Para clientes, lanzamos campañas SEO locales por ciudad y tipo de servicio, creamos contenido educativo sobre mantenimiento del hogar, e implementamos un sistema de garantía de satisfacción. Desarrollamos un sistema de calificación robusto y verificación de identidad obligatoria.',
+    results: [
+      'Red de profesionales verificados creció un 420% en 9 meses',
+      'Base de clientes activos aumentó 580%',
+      'Calificación promedio de servicios mejoró de 3.8 a 4.6 estrellas',
+      'Tasa de reservas completadas aumentó del 42% al 78%',
+      'ROI de 8.5x en inversión de marketing',
+      'Expansión exitosa de 3 a 15 ciudades'
+    ],
+    metrics: {
+      growth: '+580%',
+      roi: '8.5x',
       timeline: '9 meses',
       teamSize: '7 personas'
     },
-    tags: ['E-commerce', 'Retail', 'B2B'],
-    image: 'https://images.unsplash.com/photo-1643139863038-7355941e9e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwYWJzdHJhY3R8ZW58MXx8fHwxNzYzODQwODg4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Marketplace', 'Growth', 'Mobile'],
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxob21lJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: {
-      hero: 'https://images.unsplash.com/photo-1643139863038-7355941e9e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwYWJzdHJhY3R8ZW58MXx8fHwxNzYzODQwODg4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxob21lJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     testimonial: {
-      text: 'La estrategia de Birdie nos permitió posicionarnos como la solución preferida para retailers que quieren digitalizarse sin complicaciones. Los resultados superaron nuestras expectativas.',
-      author: 'Miguel Torres',
-      position: 'VP de Marketing, RetailHub'
+      text: 'BirdieAgency entendió perfectamente los desafíos de construir un marketplace bidireccional. Su estrategia nos permitió crecer de forma sostenible en ambos lados del mercado simultáneamente.',
+      author: 'Andrea Morales',
+      position: 'Co-fundadora, HomeFix'
     }
   },
   {
-    id: 'edulearn',
-    title: 'EduLearn',
-    subtitle: 'Plataforma de aprendizaje adaptativo',
-    client: 'EduLearn Technologies',
-    industry: 'EdTech / IA',
-    description: 'EduLearn es una plataforma educativa que utiliza inteligencia artificial para personalizar el aprendizaje según las necesidades de cada alumno. Nuestro desafío fue escalar la base de usuarios en el mercado B2C y B2B (instituciones educativas).',
-    challenge: 'EduLearn competía en un mercado saturado de plataformas educativas. El desafío dual era adquirir estudiantes individuales de manera rentable mientras simultáneamente cerraba contratos con instituciones educativas. La estacionalidad del sector educativo y la necesidad de demostrar resultados académicos medibles complicaban el growth.',
-    solution: 'Implementamos una estrategia dual-channel: para B2C, creamos contenido viral en redes sociales mostrando casos de éxito de estudiantes, optimizamos para búsquedas educativas longtail, y lanzamos un modelo freemium con conversión inteligente. Para B2B, desarrollamos white papers sobre personalización del aprendizaje con IA, implementamos demos personalizadas para directores académicos, y creamos un programa piloto gratuito para escuelas.',
+    id: 'greenlife',
+    title: 'GreenLife',
+    subtitle: 'E-commerce de productos sostenibles',
+    client: 'GreenLife',
+    industry: 'E-commerce / Sostenibilidad',
+    description: 'GreenLife es un e-commerce especializado en productos eco-friendly y sostenibles para el hogar y cuidado personal. Trabajamos en comunicar sus valores de sostenibilidad mientras escalaban ventas de forma rentable.',
+    challenge: 'GreenLife tenía una audiencia apasionada pero pequeña. El desafío era escalar sin diluir su mensaje de sostenibilidad y mantener márgenes saludables en un mercado donde los productos eco-friendly suelen tener mayor costo. La competencia de Amazon y retailers tradicionales que empezaban a ofrecer productos "verdes" complicaba la diferenciación.',
+    solution: 'Construimos una estrategia de contenido centrada en educación sobre sostenibilidad y impacto ambiental. Creamos una comunidad en redes sociales con contenido generado por usuarios mostrando su transición a vida sostenible. Implementamos SEO para búsquedas de productos específicos eco-friendly, desarrollamos colaboraciones con influencers de sostenibilidad auténticos, y creamos un programa de fidelización que recompensaba comportamientos sostenibles. Optimizamos el packaging y comunicamos el impacto positivo de cada compra.',
     results: [
-      'Base de estudiantes activos creció 510% en 10 meses',
-      '45 instituciones educativas implementaron la plataforma',
-      'Mejora promedio del 34% en calificaciones de estudiantes usuarios',
-      'ROI de 11.2x en marketing digital',
-      'Conversión de freemium a premium: 23%',
-      'Viralidad orgánica generó 42% de nuevos usuarios'
+      'Crecimiento del 450% en ventas anuales',
+      'Base de clientes recurrentes aumentó 340%',
+      'Tasa de retención mejorada del 32% al 67%',
+      'AOV (valor promedio de pedido) aumentó 45%',
+      'Comunidad en redes sociales creció a 125K seguidores orgánicos',
+      'ROI de 10.3x en marketing de contenido'
     ],
     metrics: {
-      growth: '+510%',
-      roi: '11.2x',
+      growth: '+450%',
+      roi: '10.3x',
+      timeline: '12 meses',
+      teamSize: '6 personas'
+    },
+    tags: ['E-commerce', 'Branding', 'Community'],
+    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080',
+    images: {
+      hero: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    testimonial: {
+      text: 'BirdieAgency nos ayudó a escalar manteniendo intactos nuestros valores de sostenibilidad. No solo crecimos en ventas, sino que construimos una comunidad leal y comprometida.',
+      author: 'Lucía Vega',
+      position: 'Fundadora, GreenLife'
+    }
+  },
+  {
+    id: 'fintech-pay',
+    title: 'FintechPay',
+    subtitle: 'Solución de pagos digitales para empresas',
+    client: 'FintechPay',
+    industry: 'Fintech / B2B',
+    description: 'FintechPay es una plataforma SaaS que permite a empresas aceptar pagos digitales de múltiples formas. Trabajamos en su estrategia de adquisición B2B y optimización de su embudo de conversión desde demo hasta cliente pagador.',
+    challenge: 'FintechPay competía con soluciones establecidas como Stripe y PayPal. Su ciclo de ventas era largo (promedio 45 días), el costo de adquisición de clientes era alto, y necesitaban demostrar ROI rápido para convencer a CFOs escépticos. La complejidad técnica de integración era una barrera significativa para la adopción.',
+    solution: 'Implementamos una estrategia ABM (Account-Based Marketing) dirigida a empresas de 50-500 empleados. Creamos contenido técnico especializado (whitepapers, webinars, casos de estudio por industria) que posicionó a FintechPay como thought leader. Optimizamos el sitio para conversión de demo con pruebas sociales y calculadora de ROI interactiva. Simplificamos el proceso de integración con documentación mejorada y soporte proactivo. Lanzamos campañas de LinkedIn Ads segmentadas y eventos virtuales exclusivos.',
+    results: [
+      'Pipeline de ventas creció 380% en 7 meses',
+      'Ciclo de ventas reducido de 45 a 23 días',
+      'Tasa de conversión de demo a cliente: 42%',
+      'CAC (Costo de Adquisición) reducido en 48%',
+      'LTV (Lifetime Value) de clientes aumentó 67%',
+      'ROI de 9.1x en inversión de marketing B2B'
+    ],
+    metrics: {
+      growth: '+380%',
+      roi: '9.1x',
+      timeline: '7 meses',
+      teamSize: '8 personas'
+    },
+    tags: ['Fintech', 'B2B', 'SaaS'],
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwcGF5bWVudHN8ZW58MHx8fHwxNzYzOTAzNTg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    images: {
+      hero: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwcGF5bWVudHN8ZW58MHx8fHwxNzYzOTAzNTg0fDA&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    testimonial: {
+      text: 'La estrategia B2B de BirdieAgency fue exactamente lo que necesitábamos. Nos ayudaron a posicionarnos como la alternativa seria y confiable en el mercado de pagos digitales.',
+      author: 'Fernando García',
+      position: 'VP de Marketing, FintechPay'
+    }
+  },
+  {
+    id: 'wellness-app',
+    title: 'WellnessApp',
+    subtitle: 'App de salud y bienestar integral',
+    client: 'WellnessApp',
+    industry: 'HealthTech / Mobile',
+    description: 'WellnessApp es una aplicación móvil que combina meditación, fitness y nutrición en una experiencia personalizada. Trabajamos en su estrategia de adquisición de usuarios y optimización de conversión de free a premium.',
+    challenge: 'WellnessApp enfrentaba un mercado saturado con competidores fuertes como Calm y Headspace. Su tasa de retención al día 7 era solo del 18%, la conversión de free a premium era del 2.8%, y el costo de adquisición era insostenible. Necesitaban diferenciarse y crear hábitos de uso que justificaran la suscripción premium.',
+    solution: 'Rediseñamos el onboarding para reducir fricción y acelerar el "aha moment". Implementamos notificaciones push personalizadas basadas en comportamiento, creamos contenido exclusivo con expertos en salud mental y fitness, y desarrollamos un sistema de challenges sociales para aumentar engagement. En marketing, lanzamos campañas de influencer marketing con micro-influencers auténticos del sector wellness, optimizamos ASO (App Store Optimization) y creamos una estrategia de contenido orgánico en redes sociales.',
+    results: [
+      'Base de usuarios activos creció 620% en 10 meses',
+      'Retención día 7 mejorada del 18% al 54%',
+      'Conversión free-to-premium aumentó al 8.2%',
+      'LTV de usuarios premium aumentó 73%',
+      'CAC reducido en 41% gracias a crecimiento orgánico',
+      'Rating en App Store mejoró de 3.9 a 4.7 estrellas'
+    ],
+    metrics: {
+      growth: '+620%',
+      roi: '11.6x',
       timeline: '10 meses',
       teamSize: '9 personas'
     },
-    tags: ['EdTech', 'AI', 'SaaS'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzgyNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Mobile App', 'Wellness', 'Suscripción'],
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWxsbmVzcyUyMGFwcHxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: {
-      hero: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzgyNTcxMnww&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWxsbmVzcyUyMGFwcHxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     testimonial: {
-      text: 'Birdie nos ayudó a navegar la complejidad de un modelo de negocio dual B2B/B2C. Su expertise en growth fue clave para nuestro éxito tanto con estudiantes como con instituciones.',
-      author: 'Patricia López',
-      position: 'Co-founder & CMO, EduLearn'
-    }
-  },
-  {
-    id: 'travelnow',
-    title: 'TravelNow',
-    subtitle: 'Reservas de viajes impulsadas por IA',
-    client: 'TravelNow Global',
-    industry: 'Travel / Tech',
-    description: 'TravelNow es una plataforma de planificación y reservas de viajes que utiliza IA para crear itinerarios personalizados. Trabajamos en recuperar el tráfico post-pandemia y posicionar la IA como diferenciador clave.',
-    challenge: 'La industria de viajes estaba en recuperación post-COVID, con usuarios cautelosos y presupuestos reducidos. TravelNow necesitaba reactivar usuarios dormidos, adquirir nuevos viajeros, y comunicar efectivamente cómo la IA mejora la experiencia de planificación. La competencia de OTAs establecidas como Booking y Expedia era feroz.',
-    solution: 'Creamos una estrategia de reactivación de usuarios dormidos con campañas de email personalizadas según destinos previamente buscados. Para adquisición, implementamos SEO para destinos emergentes y búsquedas longtail, creamos contenido viral sobre viajes en TikTok e Instagram, y desarrollamos un sistema de recomendaciones de IA que mostraba su valor desde la primera interacción. Lanzamos partnerships con influencers de viajes y ofertas exclusivas.',
-    results: [
-      'Reactivación del 47% de usuarios dormidos en 6 meses',
-      'Crecimiento del 360% en reservas completadas',
-      'ROI de 7.9x en inversión de marketing',
-      'Ticket promedio de reserva aumentó 28%',
-      'Contenido viral alcanzó 8.5M de impresiones orgánicas',
-      'NPS (Net Promoter Score) mejoró de 42 a 68'
-    ],
-    metrics: {
-      growth: '+360%',
-      roi: '7.9x',
-      timeline: '6 meses',
-      teamSize: '8 personas'
-    },
-    tags: ['Travel', 'SaaS', 'AI'],
-    image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYzNzk2ODc3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    images: {
-      hero: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYzNzk2ODc3fDA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    testimonial: {
-      text: 'Después de la pandemia, necesitábamos reinventarnos. Birdie no solo nos ayudó a recuperar usuarios, sino que nos posicionó como líderes en viajes con IA. Increíble trabajo.',
-      author: 'Roberto Fernández',
-      position: 'CEO, TravelNow Global'
+      text: 'BirdieAgency transformó nuestra aplicación de un producto más en el mercado a una experiencia que realmente genera hábitos. Los resultados en retención y conversión superaron nuestras metas más optimistas.',
+      author: 'Sofía Ramírez',
+      position: 'Product Lead, WellnessApp'
     }
   }
 ];
