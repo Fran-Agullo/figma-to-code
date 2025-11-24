@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 export function Hero() {
-  return <section className="relative pt-32 pb-20 px-6 lg:px-12 overflow-hidden" aria-labelledby="hero-heading">
+  return <section className="relative min-h-screen flex items-center pb-20 px-6 lg:px-12 overflow-hidden" aria-labelledby="hero-heading">
       {/* Video background */}
       <div className="absolute inset-0" aria-hidden="true">
         <video
@@ -32,7 +32,7 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="space-y-8 max-w-4xl text-center">
+        }} className="space-y-8 max-w-4xl text-center pt-24">
             <motion.div initial={{
             opacity: 0,
             y: 20
