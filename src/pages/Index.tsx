@@ -8,14 +8,12 @@ import { Pricing } from '@/components/Pricing';
 import { FAQ } from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
+  return <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
       <Header />
       <main>
         <Hero />
-        <LogosMarquee />
+        
         <WhatWeDo />
         <ProcessSteps />
         <Portfolio />
@@ -24,8 +22,6 @@ const Index = () => {
       </main>
       <Footer />
       <ScrollToTop />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
