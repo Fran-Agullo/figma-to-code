@@ -18,73 +18,69 @@ const services = servicesData.map(service => ({
   icon: iconMap[service.icon] || Target
 }));
 export function WhatWeDo() {
-  return <section id="servicios" className="py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white">
+  return (
+    <section id="servicios" className="py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white">
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className="lg:sticky lg:top-32 space-y-6">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.6
-          }}>
-              <p className="text-[#757575] text-sm mb-4 tracking-wide uppercase font-semibold">
-                ¿Qué hacemos?
-              </p>
-              <h2 className="text-5xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold">
-                Una <span className="text-[#EA580C]">estrategia de growth</span> para tu empresa diseñada por expertos.
-              </h2>
-            </motion.div>
-          </div>
+        {/* Header Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <p className="text-[#757575] text-sm mb-4 tracking-wide uppercase font-semibold">
+            ¿Qué hacemos?
+          </p>
+          <h2 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">
+            Una <span className="text-[#EA580C]">estrategia de growth</span> para tu empresa diseñada por expertos.
+          </h2>
+        </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <motion.div
-                  key={service.id} 
-                  initial={{ opacity: 0, y: 30 }} 
-                  whileInView={{ opacity: 1, y: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }} 
-                >
-                  <Card className="h-full hover:shadow-2xl transition-shadow border-gray-100 hover:border-[#EA580C]/20">
-                    <CardHeader>
-                      <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center mb-4">
-                        <IconComponent className="w-7 h-7 text-[#EA580C]" />
-                      </div>
-                      <CardTitle className="text-2xl">{service.title}</CardTitle>
-                      <CardDescription className="text-base">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-2 mb-6">
-                        {service.features.slice(0, 4).map((feature, idx) => (
-                          <div key={idx} className="flex items-start gap-2">
-                            <CheckCircle2 className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
-                            <span className="text-sm text-[#030711]">{feature}</span>
-                          </div>
-                        ))}
-                      </div>
-                      <Button variant="outline" className="w-full" asChild>
-                        <a href={`/servicios#${service.id}`}>
-                          Ver detalles
-                          <ArrowRight className="ml-2 w-4 h-4" />
-                        </a>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              );
-            })}
-          </div>
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <motion.div
+                key={service.id} 
+                initial={{ opacity: 0, y: 30 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }} 
+              >
+                <Card className="h-full hover:shadow-2xl transition-shadow border-gray-100 hover:border-[#EA580C]/20">
+                  <CardHeader>
+                    <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center mb-4">
+                      <IconComponent className="w-7 h-7 text-[#EA580C]" />
+                    </div>
+                    <CardTitle className="text-2xl">{service.title}</CardTitle>
+                    <CardDescription className="text-base">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2 mb-6">
+                      {service.features.slice(0, 4).map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-[#030711]">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <Button variant="outline" className="w-full" asChild>
+                      <a href={`/servicios#${service.id}`}>
+                        Ver detalles
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }
