@@ -138,7 +138,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: 'greenlife',
-    title: 'GreenLife',
+    title: 'Facilitea',
     subtitle: 'E-commerce de productos sostenibles',
     client: 'GreenLife',
     industry: 'E-commerce / Sostenibilidad',
