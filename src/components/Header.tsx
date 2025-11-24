@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Sparkles, Globe, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import svgPaths from '../imports/svg-3iai6ops00';
 import { BirdieLogo } from './BirdieLogo';
 
@@ -37,10 +37,10 @@ export function Header() {
           <div className="flex items-center justify-end gap-2 flex-1">
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-2" aria-label="Navegación principal">
-              <NavLink href="/servicios">Servicios</NavLink>
-              <NavLink href="/#proceso">Proceso</NavLink>
-              <NavLink href="/portfolio">Portfolio</NavLink>
-              <NavLink href="/blog">Blog</NavLink>
+              <NavLink to="/servicios">Servicios</NavLink>
+              <NavLink to="/#proceso">Proceso</NavLink>
+              <NavLink to="/portfolio">Portfolio</NavLink>
+              <NavLink to="/blog">Blog</NavLink>
             </nav>
 
             {/* Actions */}
@@ -105,16 +105,16 @@ export function Header() {
           >
             <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg rounded-3xl p-6 w-full max-w-[500px]">
               <div className="flex flex-col gap-4">
-                <MobileNavLink href="/servicios" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink to="/servicios" onClick={() => setIsMenuOpen(false)}>
                   Servicios
                 </MobileNavLink>
-                <MobileNavLink href="/#proceso" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink to="/#proceso" onClick={() => setIsMenuOpen(false)}>
                   Proceso
                 </MobileNavLink>
-                <MobileNavLink href="/portfolio" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
                   Portfolio
                 </MobileNavLink>
-                <MobileNavLink href="/blog" onClick={() => setIsMenuOpen(false)}>
+                <MobileNavLink to="/blog" onClick={() => setIsMenuOpen(false)}>
                   Blog
                 </MobileNavLink>
                 <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
@@ -136,36 +136,37 @@ export function Header() {
   );
 }
 
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
-    <motion.a
-      href={href}
-      whileHover={{ scale: 1.05 }}
-      className="box-border content-stretch flex flex-col items-start p-[20px] rounded-[60px] relative shrink-0 group hover:bg-[rgba(234,88,12,0.08)] transition-colors"
-    >
-      <span className="font-['Manrope',sans-serif] font-medium text-[15px] text-[#030711] tracking-[0.45px] whitespace-nowrap group-hover:text-[#EA580C] transition-colors">
-        {children}
-      </span>
-    </motion.a>
+    <Link to={to}>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        className="box-border content-stretch flex flex-col items-start p-[20px] rounded-[60px] relative shrink-0 group hover:bg-[rgba(234,88,12,0.08)] transition-colors"
+      >
+        <span className="font-['Manrope',sans-serif] font-medium text-[15px] text-[#030711] tracking-[0.45px] whitespace-nowrap group-hover:text-[#EA580C] transition-colors">
+          {children}
+        </span>
+      </motion.div>
+    </Link>
   );
 }
 
 function MobileNavLink({
-  href,
+  to,
   children,
   onClick
 }: {
-  href: string;
+  to: string;
   children: React.ReactNode;
   onClick: () => void;
 }) {
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
       onClick={onClick}
       className="text-[#030711] hover:text-[#EA580C] transition-colors font-medium text-lg py-2"
     >
       {children}
-    </a>
+    </Link>
   );
 }
