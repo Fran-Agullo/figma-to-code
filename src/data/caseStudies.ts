@@ -65,13 +65,13 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    id: 'techstore',
-    title: 'TechStore',
+    id: 'serpiel',
+    title: 'Serpiel',
     subtitle: 'E-commerce de electrónica de alta conversión',
-    client: 'TechStore',
+    client: 'Serpiel',
     industry: 'E-commerce / Tecnología',
-    description: 'TechStore es un e-commerce especializado en productos de tecnología y electrónica. Optimizamos su plataforma para aumentar conversiones durante campañas estratégicas como Black Friday y mejorar la experiencia de compra omnicanal.',
-    challenge: 'TechStore experimentaba altas tasas de abandono de carrito (78%) y dificultades para gestionar picos de tráfico durante eventos como Black Friday. Su plataforma era lenta, el proceso de checkout tenía 6 pasos, y carecían de estrategias de remarketing efectivas. Además, competían con gigantes como Amazon en un mercado altamente competitivo.',
+    description: 'Serpiel es un e-commerce especializado en productos de tecnología y electrónica. Optimizamos su plataforma para aumentar conversiones durante campañas estratégicas como Black Friday y mejorar la experiencia de compra omnicanal.',
+    challenge: 'Serpiel experimentaba altas tasas de abandono de carrito (78%) y dificultades para gestionar picos de tráfico durante eventos como Black Friday. Su plataforma era lenta, el proceso de checkout tenía 6 pasos, y carecían de estrategias de remarketing efectivas. Además, competían con gigantes como Amazon en un mercado altamente competitivo.',
     solution: 'Realizamos una optimización técnica completa de la plataforma, mejorando velocidad de carga en un 65%. Rediseñamos el flujo de compra implementando un checkout en un solo paso, integramos múltiples métodos de pago incluyendo wallets digitales, y creamos una estrategia de remarketing dinámica con carritos abandonados. Desarrollamos campañas específicas para Black Friday con landing pages optimizadas y sistema de urgencia en tiempo real.',
     results: [
       'Reducción del 52% en abandono de carrito',
@@ -95,7 +95,7 @@ export const caseStudies: CaseStudy[] = [
     testimonial: {
       text: 'Los resultados de nuestra campaña de Black Friday superaron todas las expectativas. BirdieAgency no solo optimizó nuestra plataforma, sino que nos enseñó a pensar estratégicamente sobre cada punto del funnel de conversión.',
       author: 'Jorge Mendoza',
-      position: 'CEO, TechStore'
+      position: 'CEO, Serpiel'
     }
   },
   {
