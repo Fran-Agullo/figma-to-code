@@ -99,37 +99,37 @@ export const caseStudies: CaseStudy[] = [
     }
   },
   {
-    id: 'homefix',
-    title: 'HomeFix',
-    subtitle: 'Plataforma de servicios para el hogar',
-    client: 'HomeFix',
-    industry: 'Marketplace / Servicios',
-    description: 'HomeFix es una plataforma digital que conecta profesionales de servicios del hogar (fontaneros, electricistas, pintores) con clientes que necesitan reparaciones. Trabajamos en escalar su base de usuarios en ambos lados del marketplace.',
-    challenge: 'HomeFix enfrentaba el clásico problema del huevo y la gallina: necesitaban más profesionales para atraer clientes, y más clientes para atraer profesionales. La calidad de los servicios era inconsistente, generando reseñas mixtas. Además, la competencia de plataformas establecidas y el modelo de negocio que requería verificación de profesionales complicaba el crecimiento rápido.',
-    solution: 'Implementamos una estrategia de growth dual: para profesionales, creamos un programa de embajadores con los mejores valorados, simplificamos el proceso de onboarding y ofrecimos sus primeros 3 trabajos sin comisión. Para clientes, lanzamos campañas SEO locales por ciudad y tipo de servicio, creamos contenido educativo sobre mantenimiento del hogar, e implementamos un sistema de garantía de satisfacción. Desarrollamos un sistema de calificación robusto y verificación de identidad obligatoria.',
+    id: 'cupra-seat',
+    title: 'Cupra / Seat',
+    subtitle: 'Transformación digital en automoción',
+    client: 'Cupra / Seat',
+    industry: 'Automoción / Retail',
+    description: 'Cupra / Seat es parte del grupo automovilístico líder en España. Trabajamos en su estrategia de marketing digital para aumentar test drives y conversiones en concesionarios oficiales.',
+    challenge: 'Cupra / Seat necesitaba modernizar su presencia digital para conectar con audiencias más jóvenes y aumentar las visitas cualificadas a concesionarios. El proceso de solicitud de test drive era complicado y la tasa de conversión era baja.',
+    solution: 'Rediseñamos la experiencia digital completa con enfoque en mobile-first. Simplificamos el formulario de solicitud de test drive a solo 3 campos, implementamos geolocalización para mostrar concesionarios cercanos, y creamos campañas segmentadas en redes sociales dirigidas a diferentes perfiles de compradores. Desarrollamos contenido visual atractivo mostrando los modelos en acción y lanzamos campañas de retargeting para usuarios que exploraron configuradores.',
     results: [
-      'Red de profesionales verificados creció un 420% en 9 meses',
-      'Base de clientes activos aumentó 580%',
-      'Calificación promedio de servicios mejoró de 3.8 a 4.6 estrellas',
-      'Tasa de reservas completadas aumentó del 42% al 78%',
-      'ROI de 8.5x en inversión de marketing',
-      'Expansión exitosa de 3 a 15 ciudades'
+      'Aumento del 340% en solicitudes de test drive',
+      'Tasa de conversión mejorada del 2.1% al 7.8%',
+      'Reducción del 58% en costo por lead cualificado',
+      'ROI de 8.5x en inversión de marketing digital',
+      'Incremento del 290% en tráfico desde redes sociales',
+      'Tiempo promedio en sitio aumentó de 1:45 a 4:20 minutos'
     ],
     metrics: {
-      growth: '+580%',
+      growth: '+340%',
       roi: '8.5x',
-      timeline: '9 meses',
+      timeline: '6 meses',
       teamSize: '7 personas'
     },
-    tags: ['Marketplace', 'Growth', 'Mobile'],
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxob21lJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Automoción', 'Digital Marketing', 'Lead Gen'],
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxjdXByYSUyMGNhcnxlbnwwfHx8fDE3NjM5MDQ4MjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     images: {
-      hero: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxob21lJTIwcmVwYWlyJTIwc2VydmljZXxlbnwwfHx8fDE3NjM5MDM1ODR8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxjdXByYSUyMGNhcnxlbnwwfHx8fDE3NjM5MDQ4MjB8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     testimonial: {
-      text: 'BirdieAgency entendió perfectamente los desafíos de construir un marketplace bidireccional. Su estrategia nos permitió crecer de forma sostenible en ambos lados del mercado simultáneamente.',
-      author: 'Andrea Morales',
-      position: 'Co-fundadora, HomeFix'
+      text: 'BirdieAgency logró conectar nuestra marca con una audiencia digital más joven. La estrategia de marketing digital incrementó significativamente nuestras conversiones en concesionarios.',
+      author: 'Carlos Martínez',
+      position: 'Director de Marketing Digital, Cupra / Seat España'
     }
   },
   {
