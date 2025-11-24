@@ -36,36 +36,36 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
   {
     id: 'niba-energia',
-    title: 'Niba Energía',
-    subtitle: 'Transformación digital en el sector energético',
-    client: 'Niba Energía',
-    industry: 'Energía / Sostenibilidad',
-    description: 'Niba Energía es una compañía innovadora que ofrece soluciones energéticas sostenibles para hogares y empresas. Trabajamos en su transformación digital completa, desde el rediseño de su presencia online hasta la optimización de su embudo de conversión.',
-    challenge: 'Niba Energía tenía una presencia digital obsoleta que no comunicaba adecuadamente su propuesta de valor diferencial en energías renovables. La tasa de conversión web era solo del 0.8% y el 73% de los usuarios abandonaban el proceso de solicitud de presupuesto. Además, competían con grandes empresas energéticas tradicionales con presupuestos significativamente mayores.',
-    solution: 'Rediseñamos completamente su experiencia digital con un enfoque en claridad y usabilidad. Creamos un sitio web moderno que explica de forma visual y sencilla los beneficios de cambiar a energía renovable. Implementamos una calculadora interactiva de ahorro energético, optimizamos el formulario de solicitud de presupuesto reduciéndolo de 15 a 4 campos esenciales, y desarrollamos una estrategia de contenido SEO centrada en búsquedas locales y educación energética.',
+    title: 'Niba',
+    subtitle: 'Optimizamos la Saas de niba un 30% para la plataforma de comercializadores independientes',
+    client: 'Niba',
+    industry: 'E-commerce / Optimización / SaaS',
+    description: 'Niba, como comercializadora de energía, dependía de un sistema SaaS interno para gestionar su operativa comercial, pero este generaba fricción significativa debido a un diseño de pantalla complejo y poco intuitivo. Esta ineficiencia causaba altos costos operativos, errores en la gestión de contratos y una baja adopción por parte del equipo comercial, impactando directamente en la velocidad de venta y el servicio al cliente.',
+    challenge: 'Niba, como comercializadora de energía, dependía de un sistema SaaS interno para gestionar su operativa comercial, pero este generaba fricción significativa debido a un diseño de pantalla complejo y poco intuitivo. Esta ineficiencia causaba altos costos operativos, errores en la gestión de contratos y una baja adopción por parte del equipo comercial, impactando directamente en la velocidad de venta y el servicio al cliente.',
+    solution: 'BirdieAgency intervino como Extensión Estratégica para transformar la confusión del sistema interno en un motor de eficiencia, aplicando la investigación UX al servicio de la optimización de procesos de negocio. Identificamos los cuellos de botella reales y los pain points más costosos dentro del flujo de trabajo del SaaS interno mediante UX Research exhaustivo, análisis de flujos (AS-IS) y testing con usuarios reales. Rediseñamos la Information Architecture y los flujos de tareas críticas, minimizando pasos y errores, y transformamos la complejidad regulatoria del sector energético en pantallas de gestión claras e intuitivas.',
     results: [
-      'Aumento del 380% en solicitudes de presupuesto cualificadas',
-      'Tasa de conversión mejorada del 0.8% al 3.4%',
-      'Reducción del 65% en la tasa de abandono del formulario',
-      'ROI de 9.2x en inversión de marketing digital',
-      'Incremento del 420% en tráfico orgánico en 8 meses',
-      'Posicionamiento en primera página para +85 términos de búsqueda relacionados con energía renovable'
+      'Aumento significativo de la eficiencia del equipo comercial',
+      'Reducción de los tiempos de gestión',
+      'Notable mejora en la satisfacción interna',
+      'Mejora en la calidad de los datos',
+      'Optimización del 30% en la plataforma SaaS',
+      'SaaS interno transformado en activo de eficiencia'
     ],
     metrics: {
-      growth: '+380%',
-      roi: '9.2x',
-      timeline: '8 meses',
+      growth: '+30%',
+      roi: '$20,000',
+      timeline: '4 meses',
       teamSize: '6 personas'
     },
-    tags: ['Diseño Web', 'SEO', 'UX/UI'],
+    tags: ['E-commerce', 'Optimización', 'SaaS'],
     image: nibaHero,
     images: {
       hero: nibaHero
     },
     testimonial: {
-      text: 'BirdieAgency transformó completamente nuestra presencia digital. El nuevo sitio web no solo es visualmente impresionante, sino que ha multiplicado nuestras conversiones. Su comprensión del sector energético fue clave.',
-      author: 'Carmen Ruiz',
-      position: 'Directora de Marketing, Niba Energía'
+      text: 'BirdieAgency transformó nuestra herramienta interna de un sistema complejo a un motor de eficiencia. La optimización del SaaS ha sido clave para mejorar nuestra operativa comercial.',
+      author: 'Equipo Niba',
+      position: 'Comercializadora de Energía'
     }
   },
   {
@@ -104,70 +104,70 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: 'cupra-seat',
-    title: 'Cupra / Seat',
-    subtitle: 'Transformación digital en automoción',
-    client: 'Cupra / Seat',
-    industry: 'Automoción / Retail',
-    description: 'Cupra / Seat es parte del grupo automovilístico líder en España. Trabajamos en su estrategia de marketing digital para aumentar test drives y conversiones en concesionarios oficiales.',
-    challenge: 'Cupra / Seat necesitaba modernizar su presencia digital para conectar con audiencias más jóvenes y aumentar las visitas cualificadas a concesionarios. El proceso de solicitud de test drive era complicado y la tasa de conversión era baja.',
-    solution: 'Rediseñamos la experiencia digital completa con enfoque en mobile-first. Simplificamos el formulario de solicitud de test drive a solo 3 campos, implementamos geolocalización para mostrar concesionarios cercanos, y creamos campañas segmentadas en redes sociales dirigidas a diferentes perfiles de compradores. Desarrollamos contenido visual atractivo mostrando los modelos en acción y lanzamos campañas de retargeting para usuarios que exploraron configuradores.',
+    title: 'Cupra',
+    subtitle: 'Sistema de diseño HMI para marca de automóviles de altas prestaciones',
+    client: 'Cupra',
+    industry: 'Product Design / Growth Digital / Design System',
+    description: 'Cupra, una marca española de automóviles de altas prestaciones, quería mejorar la experiencia digital de sus usuarios en el ámbito de la conectividad y la HMI (interfaz hombre-máquina). El reto consistía en diseñar interfaces intuitivas y coherentes sin perder la fuerte identidad de la marca.',
+    challenge: 'Cupra necesitaba mejorar la experiencia digital de sus usuarios en el ámbito de la conectividad y la HMI (interfaz hombre-máquina). El reto consistía en diseñar interfaces intuitivas y coherentes sin perder la fuerte identidad de la marca, manteniendo la consistencia en todos los puntos de contacto digitales.',
+    solution: 'Creamos un inventario completo de todos los elementos de UI en Sketch, identificando duplicados, incoherencias y elementos faltantes. Planificamos y ejecutamos la migración de Sketch a Figma, ayudando al equipo a adaptarse a nuevos flujos de trabajo. Definimos paletas de color, unidades de espaciado, estilos tipográficos y cuadrículas de maquetación para garantizar la coherencia. Construimos componentes de UI reutilizables y flexibles aplicando principios de diseño atómico. Implementamos flujos de trabajo con ramas (branching) y reglas claras para actualizar y revisar componentes, recogiendo feedback de forma regular.',
     results: [
-      'Aumento del 340% en solicitudes de test drive',
-      'Tasa de conversión mejorada del 2.1% al 7.8%',
-      'Reducción del 58% en costo por lead cualificado',
-      'ROI de 8.5x en inversión de marketing digital',
-      'Incremento del 290% en tráfico desde redes sociales',
-      'Tiempo promedio en sitio aumentó de 1:45 a 4:20 minutos'
+      'Sistema de diseño completo y coherente',
+      'Componentes reutilizables para toda la plataforma',
+      'Migración exitosa de Sketch a Figma',
+      'Mejora en la colaboración entre diseñadores y desarrolladores',
+      'Interfaces intuitivas que mantienen la identidad de marca',
+      'Reducción de tiempos de desarrollo mediante componentes estandarizados'
     ],
     metrics: {
-      growth: '+340%',
-      roi: '8.5x',
-      timeline: '6 meses',
+      growth: 'Design System',
+      roi: '1.200.000€',
+      timeline: '3 años',
       teamSize: '7 personas'
     },
-    tags: ['Automoción', 'Digital Marketing', 'Lead Gen'],
+    tags: ['Product Design', 'Growth Digital', 'Design System'],
     image: cupraHero,
     images: {
       hero: cupraHero
     },
     testimonial: {
-      text: 'BirdieAgency logró conectar nuestra marca con una audiencia digital más joven. La estrategia de marketing digital incrementó significativamente nuestras conversiones en concesionarios.',
-      author: 'Carlos Martínez',
-      position: 'Director de Marketing Digital, Cupra / Seat España'
+      text: 'BirdieAgency creó un sistema de diseño robusto que nos permite mantener la coherencia de marca en todos nuestros puntos de contacto digitales. La mejora en eficiencia ha sido notable.',
+      author: 'Equipo Cupra',
+      position: 'Cupra Design Team'
     }
   },
   {
     id: 'greenlife',
     title: 'Facilitea',
-    subtitle: 'E-commerce de productos sostenibles',
+    subtitle: 'Transformar la fricción digital de Facilitea en un activo de crecimiento sostenible, unificando la marca y el producto a través de un Diseño Estratégico 360°',
     client: 'Facilitea',
-    industry: 'E-commerce / Sostenibilidad',
-    description: 'Facilitea es un e-commerce especializado en productos eco-friendly y sostenibles para el hogar y cuidado personal. Trabajamos en comunicar sus valores de sostenibilidad mientras escalaban ventas de forma rentable.',
-    challenge: 'Facilitea tenía una audiencia apasionada pero pequeña. El desafío era escalar sin diluir su mensaje de sostenibilidad y mantener márgenes saludables en un mercado donde los productos eco-friendly suelen tener mayor costo. La competencia de Amazon y retailers tradicionales que empezaban a ofrecer productos "verdes" complicaba la diferenciación.',
-    solution: 'Construimos una estrategia de contenido centrada en educación sobre sostenibilidad y impacto ambiental. Creamos una comunidad en redes sociales con contenido generado por usuarios mostrando su transición a vida sostenible. Implementamos SEO para búsquedas de productos específicos eco-friendly, desarrollamos colaboraciones con influencers de sostenibilidad auténticos, y creamos un programa de fidelización que recompensaba comportamientos sostenibles. Optimizamos el packaging y comunicamos el impacto positivo de cada compra.',
+    industry: 'Diseño Estratégico / E-commerce / Growth Digital',
+    description: 'Facilitea se enfrentaba a un producto digital que generaba fricción y confusión en sus usuarios, afectando directamente las tasas de conversión y retención. La falta de un sistema de diseño centralizado causaba inconsistencia visual y técnica, traduciéndose en altos costos de desarrollo y mantenimiento, y limitando seriamente su capacidad de crecimiento digital. Necesitaban una transformación holística que unificara la experiencia de marca y el producto.',
+    challenge: 'Facilitea se enfrentaba a un producto digital que generaba fricción y confusión en sus usuarios, afectando directamente las tasas de conversión y retención. La falta de un sistema de diseño centralizado causaba inconsistencia visual y técnica, traduciéndose en altos costos de desarrollo y mantenimiento, y limitando seriamente su capacidad de crecimiento digital.',
+    solution: 'Como extensión estratégica de su equipo, implementamos nuestro Proceso 360° para transformar la fricción en experiencias claras y funcionales, asegurando que la marca, el diseño y la tecnología hablaran el mismo idioma. Realizamos una auditoría 360° (UX, SEO, Analytics) y User Research exhaustivo para identificar los cuellos de botella más costosos. Diseñamos una Information Architecture clara y estratégica, desarrollamos un UX/UI Design System End-to-End con componentes reutilizables, e integramos IA y herramientas no-code para garantizar un producto eficiente y escalable.',
     results: [
-      'Crecimiento del 450% en ventas anuales',
-      'Base de clientes recurrentes aumentó 340%',
-      'Tasa de retención mejorada del 32% al 67%',
-      'AOV (valor promedio de pedido) aumentó 45%',
-      'Comunidad en redes sociales creció a 125K seguidores orgánicos',
-      'ROI de 10.3x en marketing de contenido'
+      'Producto digital unificado y fácil de mantener',
+      'Experiencia de usuario clara y sin fricción',
+      'Sistema de diseño coherente y escalable',
+      'Simplificación de procesos complejos',
+      'Activo digital posicionado para crecimiento sostenido',
+      'Coherencia visual y técnica en toda la plataforma'
     ],
     metrics: {
-      growth: '+450%',
-      roi: '10.3x',
-      timeline: '12 meses',
+      growth: '360°',
+      roi: '40.000€',
+      timeline: '6 meses',
       teamSize: '6 personas'
     },
-    tags: ['E-commerce', 'Branding', 'Community'],
+    tags: ['Diseño Estratégico', 'E-commerce', 'Growth Digital'],
     image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080',
     images: {
       hero: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080'
     },
     testimonial: {
-      text: 'BirdieAgency nos ayudó a escalar manteniendo intactos nuestros valores de sostenibilidad. No solo crecimos en ventas, sino que construimos una comunidad leal y comprometida.',
-      author: 'Lucía Vega',
-      position: 'Fundadora, Facilitea'
+      text: 'BirdieAgency transformó nuestro producto digital de un sistema complejo a una experiencia clara y escalable. El diseño estratégico 360° fue clave para nuestro crecimiento.',
+      author: 'Equipo Facilitea',
+      position: 'Facilitea'
     }
   },
   {

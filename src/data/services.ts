@@ -14,250 +14,168 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: 'growth-marketing',
-    title: 'Growth Marketing',
-    description: 'Estrategias data-driven para escalar tu negocio de forma sostenible. Combinamos experimentación rápida, análisis profundo y optimización continua para impulsar tu crecimiento.',
-    icon: 'TrendingUp',
+    id: 'product-design-ai',
+    title: 'Diseño de producto digital (IA)',
+    description: 'Transformamos plataformas obsoletas en activos digitales de alto rendimiento, asegurando que cada interfaz esté optimizada para el objetivo de negocio.',
+    icon: 'Laptop',
     features: [
-      'Growth Hacking & Experimentación',
-      'Optimización de Funnel de Conversión',
-      'Estrategias de Adquisición Multi-Canal',
-      'Retención y Lifecycle Marketing',
-      'A/B Testing y Optimización CRO',
-      'Marketing Automation'
+      'Diseño UI/UX centrado en conversión',
+      'Optimización de flujos de usuario',
+      'Integración de IA en interfaces',
+      'Prototipado rápido e iterativo',
+      'Design Systems escalables',
+      'Testing y validación continua'
     ],
     benefits: [
-      'Crecimiento medible y escalable',
-      'Reducción de CAC (Costo de Adquisición)',
-      'Aumento de LTV (Lifetime Value)',
-      'ROI optimizado en campañas',
-      'Decisiones basadas en datos reales',
-      'Metodología ágil y experimental'
+      'Interfaces optimizadas para objetivos de negocio',
+      'Mayor eficiencia operativa',
+      'Experiencias digitales de alto rendimiento',
+      'Reducción de fricción en flujos críticos',
+      'Productos digitales escalables',
+      'Integración inteligente de IA'
     ],
     process: [
       {
-        step: 'Auditoría & Análisis',
-        description: 'Evaluamos tu situación actual, identificamos oportunidades de crecimiento y establecemos métricas clave.'
+        step: 'Auditoría Digital',
+        description: 'Evaluamos la plataforma actual e identificamos oportunidades de optimización.'
       },
       {
-        step: 'Estrategia de Growth',
-        description: 'Diseñamos un roadmap de experimentos y tácticas priorizadas según potencial de impacto.'
+        step: 'Diseño Estratégico',
+        description: 'Creamos interfaces centradas en los objetivos de negocio y las necesidades del usuario.'
       },
       {
-        step: 'Implementación & Testing',
-        description: 'Ejecutamos experimentos rápidos, medimos resultados y optimizamos continuamente.'
+        step: 'Implementación',
+        description: 'Desarrollamos y optimizamos cada componente con tecnologías modernas.'
       },
       {
-        step: 'Escalado',
-        description: 'Escalamos las tácticas que funcionan y duplicamos el crecimiento de forma sostenible.'
+        step: 'Validación',
+        description: 'Testeamos, medimos y refinamos continuamente para asegurar el alto rendimiento.'
       }
     ],
-    caseStudies: ['fintechflow', 'edulearn', 'travelnow']
+    caseStudies: ['niba-energia', 'facilitea', 'cupra-seat']
   },
   {
-    id: 'seo-content',
-    title: 'SEO & Content',
-    description: 'Posicionamiento orgánico que genera tráfico cualificado y conversiones. Creamos estrategias de contenido que atraen, educan y convierten a tu audiencia ideal.',
+    id: 'ux-research',
+    title: 'UX Research',
+    description: 'Investigamos, detectamos y cuantificamos los pain points que usted no ve, transformando la fricción de sus usuarios en oportunidades de negocio medibles.',
     icon: 'Search',
     features: [
-      'Auditoría SEO Técnico',
-      'Investigación de Keywords',
-      'Estrategia de Contenido',
-      'Link Building Estratégico',
-      'SEO Local y E-commerce',
-      'Content Marketing & Blog'
+      'Investigación cualitativa y cuantitativa',
+      'User testing y validación',
+      'Análisis de comportamiento de usuarios',
+      'Journey mapping detallado',
+      'Identificación de pain points críticos',
+      'Auditorías UX exhaustivas'
     ],
     benefits: [
-      'Tráfico orgánico cualificado',
-      'Visibilidad en búsquedas clave',
-      'Autoridad de marca',
-      'ROI a largo plazo',
-      'Reducción de costos de adquisición',
-      'Contenido que educa y convierte'
-    ],
-    process: [
-      {
-        step: 'Análisis & Keywords',
-        description: 'Investigamos oportunidades de posicionamiento y definimos estrategia de contenido.'
-      },
-      {
-        step: 'Optimización Técnica',
-        description: 'Mejoramos arquitectura del sitio, velocidad, estructura y aspectos técnicos críticos.'
-      },
-      {
-        step: 'Creación de Contenido',
-        description: 'Producimos contenido optimizado que responde a las búsquedas de tu audiencia.'
-      },
-      {
-        step: 'Link Building & Autoridad',
-        description: 'Construimos autoridad mediante enlaces de calidad y menciones estratégicas.'
-      }
-    ],
-    caseStudies: ['depasify', 'healthtech-pro']
-  },
-  {
-    id: 'web-design-ux',
-    title: 'Diseño Web & UX',
-    description: 'Diseños que combinan estética y funcionalidad. Creamos experiencias digitales que cautivan usuarios y generan conversiones.',
-    icon: 'Palette',
-    features: [
-      'Diseño UI/UX Profesional',
-      'Prototipado Interactivo',
-      'Design System & Branding',
-      'Responsive & Mobile-First',
-      'Optimización de Conversión',
-      'Testing de Usabilidad'
-    ],
-    benefits: [
-      'Experiencia de usuario excepcional',
-      'Mayor tasa de conversión',
-      'Diseño consistente y escalable',
-      'Marca profesional y memorable',
-      'Accesibilidad garantizada',
-      'Adaptado a todos los dispositivos'
+      'Detección de fricción invisible',
+      'Decisiones basadas en datos reales',
+      'Oportunidades de negocio medibles',
+      'Reducción de costos operativos',
+      'Mayor satisfacción del usuario',
+      'ROI cuantificable en optimizaciones'
     ],
     process: [
       {
         step: 'Research & Discovery',
-        description: 'Investigamos a tu audiencia, competencia y objetivos de negocio.'
+        description: 'Investigamos a fondo el comportamiento y las necesidades de los usuarios.'
       },
       {
-        step: 'Wireframes & Prototipo',
-        description: 'Diseñamos la estructura y flujos de usuario antes del diseño visual.'
+        step: 'Análisis de Pain Points',
+        description: 'Identificamos y cuantificamos los puntos de fricción más costosos.'
       },
       {
-        step: 'Diseño Visual',
-        description: 'Creamos interfaces atractivas alineadas con tu identidad de marca.'
+        step: 'Journey Mapping',
+        description: 'Mapeamos la experiencia completa del usuario identificando oportunidades.'
       },
       {
-        step: 'Testing & Refinamiento',
-        description: 'Validamos el diseño con usuarios reales y optimizamos la experiencia.'
+        step: 'Insights Accionables',
+        description: 'Entregamos recomendaciones específicas con impacto medible en el negocio.'
       }
     ],
-    caseStudies: ['depasify', 'retailhub']
+    caseStudies: ['niba-energia', 'facilitea']
   },
   {
-    id: 'product-development',
-    title: 'Desarrollo de Producto Digital',
-    description: 'Transformamos ideas en productos digitales escalables. Desarrollo full-stack con tecnologías modernas y metodologías ágiles.',
-    icon: 'Code',
+    id: 'growth-digital',
+    title: 'Growth Digital',
+    description: 'Estudiamos a fondo las posibilidades digitales de nuestros clientes y lo posicionamos en el lugar que le pertenece.',
+    icon: 'TrendingUp',
     features: [
-      'Desarrollo Web Full-Stack',
-      'Apps Móviles (iOS & Android)',
-      'SaaS & Plataformas Digitales',
-      'Integraciones & APIs',
-      'MVP & Prototipos Rápidos',
-      'Mantenimiento & Soporte'
+      'Estrategia de crecimiento digital',
+      'SEO y posicionamiento orgánico',
+      'Marketing de contenido estratégico',
+      'Optimización de conversión (CRO)',
+      'Análisis competitivo profundo',
+      'Roadmap de crecimiento medible'
     ],
     benefits: [
-      'Código limpio y escalable',
-      'Tecnologías modernas',
-      'Time-to-market acelerado',
-      'Arquitectura robusta',
-      'Seguridad enterprise-grade',
-      'Documentación completa'
+      'Posicionamiento estratégico del negocio',
+      'Crecimiento digital sostenible',
+      'Ventaja competitiva clara',
+      'Tráfico cualificado y conversiones',
+      'ROI medible y escalable',
+      'Visibilidad en canales clave'
     ],
     process: [
       {
-        step: 'Planificación & Arquitectura',
-        description: 'Definimos alcance, tecnologías y arquitectura del producto.'
+        step: 'Análisis de Oportunidades',
+        description: 'Estudiamos a fondo las posibilidades digitales de tu negocio.'
       },
       {
-        step: 'Desarrollo Iterativo',
-        description: 'Construimos el producto en sprints con entregas continuas.'
+        step: 'Estrategia de Posicionamiento',
+        description: 'Definimos la estrategia para posicionarte donde debes estar.'
       },
       {
-        step: 'Testing & QA',
-        description: 'Aseguramos calidad mediante testing exhaustivo y automatizado.'
+        step: 'Implementación',
+        description: 'Ejecutamos las tácticas de crecimiento priorizadas por impacto.'
       },
       {
-        step: 'Deploy & Mantenimiento',
-        description: 'Lanzamos el producto y proporcionamos soporte continuo.'
+        step: 'Optimización Continua',
+        description: 'Medimos, ajustamos y escalamos lo que funciona.'
       }
     ],
-    caseStudies: ['depasify', 'fintechflow', 'healthtech-pro']
+    caseStudies: ['facilitea', 'cupra-seat']
   },
   {
-    id: 'digital-strategy',
-    title: 'Estrategia Digital',
-    description: 'Consultoría estratégica para transformar tu negocio digitalmente. Te ayudamos a definir objetivos, identificar oportunidades y crear roadmaps accionables.',
-    icon: 'Target',
+    id: 'ai-automation',
+    title: 'IA y Automatización',
+    description: 'Nuestra metodología integra la estrategia de marca, la precisión del diseño y la eficiencia de la IA para un crecimiento medible.',
+    icon: 'Cpu',
     features: [
-      'Auditoría Digital Completa',
-      'Análisis de Mercado & Competencia',
-      'Definición de OKRs & KPIs',
-      'Roadmap de Transformación Digital',
-      'Optimización de Procesos',
-      'Consultoría Continua'
+      'Integración de IA en productos digitales',
+      'Automatización de procesos de negocio',
+      'Chatbots y asistentes inteligentes',
+      'Análisis predictivo con IA',
+      'Personalización automatizada',
+      'Optimización mediante machine learning'
     ],
     benefits: [
-      'Visión estratégica clara',
-      'Decisiones informadas por datos',
-      'Ventaja competitiva',
-      'Optimización de recursos',
-      'Innovación estructurada',
-      'Crecimiento planificado'
+      'Eficiencia operativa maximizada',
+      'Reducción de costos mediante automatización',
+      'Experiencias personalizadas a escala',
+      'Decisiones más inteligentes con IA',
+      'Escalabilidad sin aumentar recursos',
+      'Crecimiento medible y predecible'
     ],
     process: [
       {
-        step: 'Diagnóstico',
-        description: 'Evaluamos tu situación actual y identificamos gaps y oportunidades.'
+        step: 'Identificación de Oportunidades',
+        description: 'Detectamos procesos y áreas donde la IA puede generar mayor impacto.'
       },
       {
-        step: 'Estrategia',
-        description: 'Diseñamos un plan estratégico alineado con tus objetivos de negocio.'
+        step: 'Diseño de Solución',
+        description: 'Diseñamos la integración de IA alineada con objetivos de negocio.'
       },
       {
-        step: 'Roadmap',
-        description: 'Creamos un roadmap priorizado con iniciativas y métricas claras.'
+        step: 'Implementación',
+        description: 'Integramos IA y automatización en tu producto o flujos de trabajo.'
       },
       {
-        step: 'Acompañamiento',
-        description: 'Te acompañamos en la ejecución y ajustamos la estrategia según resultados.'
+        step: 'Optimización',
+        description: 'Monitoreamos, ajustamos y mejoramos continuamente el rendimiento.'
       }
     ],
-    caseStudies: ['retailhub', 'edulearn']
-  },
-  {
-    id: 'analytics-data',
-    title: 'Analytics & Data',
-    description: 'Convertimos datos en insights accionables. Implementamos sistemas de medición, análisis y visualización que impulsan decisiones inteligentes.',
-    icon: 'BarChart3',
-    features: [
-      'Implementación de Analytics',
-      'Dashboards Personalizados',
-      'Data Tracking & Eventos',
-      'Análisis de Comportamiento',
-      'Reportes Automatizados',
-      'Insights & Recomendaciones'
-    ],
-    benefits: [
-      'Visibilidad completa del negocio',
-      'Decisiones basadas en datos',
-      'Identificación de oportunidades',
-      'Optimización continua',
-      'ROI medible',
-      'Predicción de tendencias'
-    ],
-    process: [
-      {
-        step: 'Setup & Tracking',
-        description: 'Implementamos herramientas de analytics y configuramos eventos clave.'
-      },
-      {
-        step: 'Dashboards',
-        description: 'Creamos dashboards visuales que muestran métricas importantes.'
-      },
-      {
-        step: 'Análisis',
-        description: 'Analizamos datos para identificar patrones, problemas y oportunidades.'
-      },
-      {
-        step: 'Recomendaciones',
-        description: 'Entregamos insights accionables para mejorar resultados.'
-      }
-    ],
-    caseStudies: ['fintechflow', 'retailhub']
+    caseStudies: ['niba-energia', 'facilitea']
   }
 ];
 
