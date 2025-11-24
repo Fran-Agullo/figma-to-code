@@ -3,7 +3,7 @@ import { Sparkles, Globe, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import svgPaths from '../imports/svg-3iai6ops00';
-import { BirdieLogo } from './BirdieLogo';
+import birdieLogo from '@/assets/birdie-logo.png';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,10 +25,14 @@ export function Header() {
             <Link to="/">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center w-[40px] h-[40px]"
-                aria-label="BirdieDigital - Página principal"
+                className="flex items-center"
+                aria-label="BirdieAgency - Página principal"
               >
-                <BirdieLogo />
+                <img 
+                  src={birdieLogo} 
+                  alt="BirdieAgency" 
+                  className="h-[40px] w-auto"
+                />
               </motion.div>
             </Link>
           </div>
