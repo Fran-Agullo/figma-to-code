@@ -17,11 +17,11 @@ export function Header() {
         className="fixed top-6 left-6 right-6 z-50"
         role="banner"
       >
-        <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[17px] py-[7px] rounded-[150px] w-full">
+        <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[50px] py-[7px] rounded-[150px] w-full">
           <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.08)] border-solid inset-0 pointer-events-none rounded-[150px]" />
 
           {/* Left Container - Logo */}
-          <div className="box-border content-stretch flex items-center px-0 py-[10px] relative shrink-0">
+          <div className="box-border content-stretch flex items-center px-0 py-[8px] relative shrink-0">
             <Link to="/">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -40,7 +40,7 @@ export function Header() {
           {/* Right Container - Nav & Actions */}
           <div className="flex items-center justify-end gap-2 flex-1">
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-2" aria-label="Navegación principal">
+            <nav className="hidden lg:flex items-center gap-1" aria-label="Navegación principal">
               <NavLink to="/">Inicio</NavLink>
               <NavLink to="/servicios">Servicios</NavLink>
               <NavLink to="/portfolio">Proyectos</NavLink>
@@ -145,7 +145,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
     <Link to={to}>
       <motion.div
         whileHover={{ scale: 1.05 }}
-        className="box-border content-stretch flex flex-col items-start p-[20px] rounded-[60px] relative shrink-0 group hover:bg-[rgba(234,88,12,0.08)] transition-colors"
+        className="box-border content-stretch flex flex-col items-start p-[12px] rounded-[60px] relative shrink-0 group hover:bg-[rgba(234,88,12,0.08)] transition-colors"
       >
         <span className="font-['Manrope',sans-serif] font-medium text-[15px] text-[#030711] tracking-[0.45px] whitespace-nowrap group-hover:text-[#EA580C] transition-colors">
           {children}
