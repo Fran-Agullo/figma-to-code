@@ -14,7 +14,7 @@ export function Header() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="sticky top-6 z-50 flex justify-center px-4"
+        className="sticky top-0 z-50 flex justify-center px-4"
         role="banner"
       >
         <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[17px] py-[7px] rounded-[150px] w-full max-w-[1240px]">
