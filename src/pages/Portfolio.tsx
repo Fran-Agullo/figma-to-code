@@ -7,30 +7,26 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import { caseStudies } from '@/data/caseStudies';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
 const Portfolio = () => {
   const [selectedIndustry, setSelectedIndustry] = useState<string>('all');
-  
   const industries = ['all', ...Array.from(new Set(caseStudies.map(cs => cs.industry)))];
-  
-  const filteredProjects = selectedIndustry === 'all' 
-    ? caseStudies 
-    : caseStudies.filter(cs => cs.industry === selectedIndustry);
-
-  return (
-    <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
+  const filteredProjects = selectedIndustry === 'all' ? caseStudies : caseStudies.filter(cs => cs.industry === selectedIndustry);
+  return <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
       <Header />
       
-      <main>
+      <main className="pt-[120px]">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white">
+        <section className="pt-32 pb-16 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white py-0">
           <div className="max-w-[1440px] mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6
+          }} className="text-center mb-12">
               <h1 className="text-6xl md:text-7xl text-[#030711] tracking-tight leading-[1.1] mb-6">
                 Casos de <span className="text-[#EA580C]">Éxito</span>
               </h1>
@@ -40,50 +36,44 @@ const Portfolio = () => {
             </motion.div>
 
             {/* Filter Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex flex-wrap justify-center gap-3 mb-16"
-            >
-              {industries.map((industry) => (
-                <button
-                  key={industry}
-                  onClick={() => setSelectedIndustry(industry)}
-                  className={`px-6 py-2 rounded-full font-medium transition-all ${
-                    selectedIndustry === industry
-                      ? 'bg-[#EA580C] text-white shadow-lg'
-                      : 'bg-gray-100 text-[#030711] hover:bg-gray-200'
-                  }`}
-                >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} animate={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.6,
+            delay: 0.2
+          }} className="flex flex-wrap justify-center gap-3 mb-16">
+              {industries.map(industry => <button key={industry} onClick={() => setSelectedIndustry(industry)} className={`px-6 py-2 rounded-full font-medium transition-all ${selectedIndustry === industry ? 'bg-[#EA580C] text-white shadow-lg' : 'bg-gray-100 text-[#030711] hover:bg-gray-200'}`}>
                   {industry === 'all' ? 'Todos' : industry}
-                </button>
-              ))}
+                </button>)}
             </motion.div>
           </div>
         </section>
 
         {/* Portfolio Grid */}
-        <section className="py-16 px-6 lg:px-12">
+        <section className="px-6 lg:px-12 py-0 pb-[80px]">
           <div className="max-w-[1440px] mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
+              {filteredProjects.map((project, index) => <motion.div key={project.id} initial={{
+              opacity: 0,
+              y: 30
+            }} whileInView={{
+              opacity: 1,
+              y: 0
+            }} viewport={{
+              once: true
+            }} transition={{
+              duration: 0.6,
+              delay: index * 0.1
+            }}>
                   <Link to={`/portfolio/${project.id}`}>
                     <div className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:shadow-2xl hover:border-[#EA580C]/20 transition-all h-full flex flex-col">
                       {/* Image */}
                       <div className="relative h-64 overflow-hidden">
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
+                        <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                         <div className="absolute bottom-4 left-4 right-4">
                           <span className="inline-block px-3 py-1 bg-[#EA580C] text-white text-sm font-medium rounded-full mb-2">
@@ -126,8 +116,7 @@ const Portfolio = () => {
                       </div>
                     </div>
                   </Link>
-                </motion.div>
-              ))}
+                </motion.div>)}
             </div>
           </div>
         </section>
@@ -135,12 +124,17 @@ const Portfolio = () => {
         {/* CTA Section */}
         <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
           <div className="max-w-[1440px] mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6
+          }}>
               <h2 className="text-5xl text-white tracking-tight leading-[1.15] mb-6">
                 ¿Listo para ser el próximo caso de éxito?
               </h2>
@@ -160,8 +154,6 @@ const Portfolio = () => {
 
       <Footer />
       <ScrollToTop />
-    </div>
-  );
+    </div>;
 };
-
 export default Portfolio;
