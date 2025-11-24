@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 export function Hero() {
-  return <section className="relative pt-32 pb-20 px-6 lg:px-12 overflow-hidden" aria-labelledby="hero-heading">
+  return <section className="relative min-h-screen px-6 lg:px-12 overflow-hidden flex items-center pt-20" aria-labelledby="hero-heading">
       {/* Video background */}
-      <div className="absolute inset-0" aria-hidden="true">
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" poster="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-poster-00001.jpg">
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.mp4" type="video/mp4" />
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.webm" type="video/webm" />
