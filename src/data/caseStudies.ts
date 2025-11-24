@@ -1,4 +1,6 @@
 import nibaHero from '@/assets/niba-hero.png';
+import serpielHero from '@/assets/serpiel-hero.png';
+import cupraHero from '@/assets/cupra-hero.png';
 
 export interface CaseStudy {
   id: string;
@@ -90,9 +92,9 @@ export const caseStudies: CaseStudy[] = [
       teamSize: '8 personas'
     },
     tags: ['E-commerce', 'Conversión', 'Performance'],
-    image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: serpielHero,
     images: {
-      hero: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MzkwMzU4NHww&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: serpielHero
     },
     testimonial: {
       text: 'Los resultados de nuestra campaña de Black Friday superaron todas las expectativas. BirdieAgency no solo optimizó nuestra plataforma, sino que nos enseñó a pensar estratégicamente sobre cada punto del funnel de conversión.',
@@ -124,9 +126,9 @@ export const caseStudies: CaseStudy[] = [
       teamSize: '7 personas'
     },
     tags: ['Automoción', 'Digital Marketing', 'Lead Gen'],
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxjdXByYSUyMGNhcnxlbnwwfHx8fDE3NjM5MDQ4MjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: cupraHero,
     images: {
-      hero: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxjdXByYSUyMGNhcnxlbnwwfHx8fDE3NjM5MDQ4MjB8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      hero: cupraHero
     },
     testimonial: {
       text: 'BirdieAgency logró conectar nuestra marca con una audiencia digital más joven. La estrategia de marketing digital incrementó significativamente nuestras conversiones en concesionarios.',
