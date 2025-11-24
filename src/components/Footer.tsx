@@ -1,43 +1,26 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Sparkles, Mail, Linkedin, Instagram, Phone, MapPin } from 'lucide-react';
-
 export function Footer() {
-
-  return (
-    <footer className="bg-[#030711] text-white pt-20 pb-8 px-6 lg:px-12" role="contentinfo">
+  return <footer className="bg-[#030711] text-white pt-20 pb-8 px-6 lg:px-12" role="contentinfo">
       <div className="max-w-[1440px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#EA580C] to-[#FF6B00] rounded-3xl p-12 mb-16 relative overflow-hidden"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.6
+      }} className="bg-gradient-to-br from-[#EA580C] to-[#FF6B00] rounded-3xl p-12 mb-16 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange-300 rounded-full blur-3xl" />
+            
           </div>
 
-          <div className="relative text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl lg:text-5xl font-semibold mb-6 tracking-tight">
-              ¿Listo para transformar tu presente?
-            </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Hablemos de tu proyecto y descubre cómo podemos diseñar experiencias digitales memorables para tu marca.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contacto">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-white text-[#EA580C] px-10 py-4 rounded-full font-medium hover:bg-gray-100 transition-all shadow-xl"
-                >
-                  Contactanos
-                </motion.button>
-              </Link>
-            </div>
-          </div>
+          
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -134,6 +117,5 @@ export function Footer() {
         </div>
 
       </div>
-    </footer>
-  );
+    </footer>;
 }
