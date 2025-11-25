@@ -14,8 +14,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative w-full">
-        <div className="flex flex-row items-start justify-between gap-12">
+      <div className="relative w-full max-w-[1400px] mx-auto">
+        <div className="flex flex-row items-start justify-between gap-8 lg:gap-12">
           {/* Left side - Main heading */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
@@ -43,48 +43,51 @@ export function Hero() {
             </h1>
           </motion.div>
 
-          {/* Right side - Description, CTA and Scroll Indicator */}
+          {/* Right side - Description, CTA and Scroll Indicator in row */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-            className="hidden lg:flex flex-col items-end gap-8 pt-24"
+            className="hidden lg:flex flex-row items-start gap-12 pt-24"
           >
-            {/* Description text */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-right max-w-xs"
-            >
-              <p className="text-lg text-white/90 leading-relaxed">
-                Agencia de diseño<br />
-                de producto UI / UX.<br />
-                Consultoría de producto
-              </p>
-            </motion.div>
+            {/* Description and Button column */}
+            <div className="flex flex-col items-end gap-8">
+              {/* Description text */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="text-right max-w-xs"
+              >
+                <p className="text-lg text-white/90 leading-relaxed">
+                  Agencia de diseño<br />
+                  de producto UI / UX.<br />
+                  Consultoría de producto
+                </p>
+              </motion.div>
 
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7, duration: 0.6 }}
-            >
-              <Link to="/contacto">
-                <motion.button 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="group bg-[#EA580C] text-white px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#C14107] transition-all shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
-                  aria-label="Agendar llamada con BirdieAgency"
-                >
-                  Agendar llamada
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                </motion.button>
-              </Link>
-            </motion.div>
+              {/* CTA Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
+              >
+                <Link to="/contacto">
+                  <motion.button 
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="group bg-[#EA580C] text-white px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#C14107] transition-all shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-[#EA580C] focus:ring-offset-2"
+                    aria-label="Agendar llamada con BirdieAgency"
+                  >
+                    Agendar llamada
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                  </motion.button>
+                </Link>
+              </motion.div>
+            </div>
 
             {/* Scroll Indicator */}
-            <div className="pt-4">
+            <div className="pt-2">
               <ScrollIndicator />
             </div>
           </motion.div>
