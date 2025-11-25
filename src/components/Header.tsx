@@ -17,7 +17,7 @@ export function Header() {
       duration: 0.6,
       ease: 'easeOut'
     }} className="fixed top-6 left-6 right-6 z-50" role="banner">
-        <div className="backdrop-blur-x0,5 bg-white/40 border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[25px] py-[7px] rounded-[150px] w-full border-0">
+        <div className="backdrop-blur-x0,5 bg-white/40 border-white/20 shadow-lg shadow-black/5 box-border py-[7px] rounded-[150px] w-full border-0 gap-[8px] flex items-center justify-between px-[25px] mx-[200px]">
           <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.08)] border-solid inset-0 pointer-events-none rounded-[150px]" />
 
           {/* Left Container - Logo */}
