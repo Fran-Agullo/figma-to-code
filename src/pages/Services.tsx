@@ -60,12 +60,9 @@ const Services = () => {
             }} transition={{
               duration: 0.6
             }} className="scroll-mt-24">
-                  <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-start ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+                  <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                     {/* Content */}
-                    <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                      <div className="w-16 h-16 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center mb-6">
-                        <Icon className="w-8 h-8 text-[#EA580C]" />
-                      </div>
+                    <div>
                       <h2 className="text-3xl md:text-4xl text-[#030711] font-bold mb-4">
                         {service.title}
                       </h2>
@@ -79,10 +76,12 @@ const Services = () => {
                           Beneficios Clave
                         </h3>
                         <div className="space-y-2">
-                          {service.benefits.slice(0, 3).map((benefit, idx) => <div key={idx} className="flex items-start gap-2">
+                          {service.benefits.slice(0, 3).map((benefit, idx) => (
+                            <div key={idx} className="flex items-start gap-2">
                               <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-1" />
                               <span className="text-sm text-[#666666]">{benefit}</span>
-                            </div>)}
+                            </div>
+                          ))}
                         </div>
                       </div>
 
@@ -95,13 +94,14 @@ const Services = () => {
                     </div>
 
                     {/* Process Steps */}
-                    <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
+                    <div>
                       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                         <h3 className="text-xl text-[#030711] font-semibold mb-4">
                           Nuestro Proceso
                         </h3>
                         <div className="space-y-4">
-                          {service.process.slice(0, 3).map((step, idx) => <div key={idx} className="flex gap-3">
+                          {service.process.slice(0, 3).map((step, idx) => (
+                            <div key={idx} className="flex gap-3">
                               <div className="flex-shrink-0 w-8 h-8 bg-[#EA580C] text-white rounded-full flex items-center justify-center font-bold text-sm">
                                 {idx + 1}
                               </div>
@@ -111,7 +111,8 @@ const Services = () => {
                                 </h4>
                                 <p className="text-sm text-[#666666]">{step.description}</p>
                               </div>
-                            </div>)}
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>

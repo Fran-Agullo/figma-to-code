@@ -43,7 +43,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="block group relative overflow-hidden rounded-[20px] border border-[rgba(221,234,237,1)] bg-[#111111] shadow-[inset_0px_1px_20px_0px_rgba(255,255,255,0.25)] hover:shadow-[inset_0px_1px_40px_0px_rgba(255,255,255,0.4),0_20px_60px_-15px_rgba(234,88,12,0.5)] transition-all duration-500"
+                className="block group relative overflow-hidden rounded-[20px] border border-border bg-card shadow-sm hover:shadow-[0_20px_60px_-15px_rgba(234,88,12,0.5)] transition-all duration-500"
                 style={{
                   transformStyle: 'preserve-3d',
                   perspective: '1000px'
@@ -78,18 +78,12 @@ export default function Portfolio() {
                   <div className="relative p-6 lg:p-10 flex flex-col justify-center">
                     <div className="space-y-4">
                       {/* Title with gradient mask */}
-                      <h3 
-                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-white"
-                        style={{
-                          WebkitMaskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)',
-                          maskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)'
-                        }}
-                      >
+                      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                         {project.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="text-base lg:text-lg text-white/80 leading-relaxed">
+                      <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
                         {project.subtitle}
                       </p>
 
@@ -100,9 +94,9 @@ export default function Portfolio() {
                         {project.tags.map((tag, tagIndex) => (
                           <div
                             key={tagIndex}
-                            className="px-3 py-1.5 rounded-[10px] border border-[rgba(255,255,255,0.1)] bg-transparent"
+                            className="px-3 py-1.5 rounded-[10px] border border-border bg-background/50"
                           >
-                            <span className="text-sm text-white">
+                            <span className="text-sm text-foreground">
                               {tag}
                             </span>
                           </div>
