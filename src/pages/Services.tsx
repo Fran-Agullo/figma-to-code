@@ -45,54 +45,68 @@ const Services = () => {
         
 
         {/* Detailed Service Sections */}
-        <section className="py-24 px-8 lg:px-16 bg-gray-50">
-          <div className="max-w-[1200px] mx-auto space-y-24">
+        <section className="py-24 px-8 lg:px-16 bg-white">
+          <div className="max-w-[1200px] mx-auto space-y-12">
             {services.map((service, index) => {
             const Icon = iconMap[service.icon];
-            return <motion.div key={service.id} id={service.id} initial={{
-              opacity: 0,
-              y: 40
-            }} whileInView={{
-              opacity: 1,
-              y: 0
-            }} viewport={{
-              once: true
-            }} transition={{
-              duration: 0.6
-            }} className="scroll-mt-24">
-                  <div className="space-y-6">
-                    <div>
-                      <h2 className="text-3xl md:text-4xl text-[#030711] font-bold mb-3">
-                        {service.title}
-                      </h2>
-                      <p className="text-base text-[#666666] leading-relaxed">
-                        {service.description}
-                      </p>
-                    </div>
-
-                    {/* Benefits */}
-                    <div>
-                      <h3 className="text-lg text-[#030711] font-semibold mb-2">
-                        Beneficios
-                      </h3>
-                      <div className="space-y-2">
-                        {service.benefits.slice(0, 3).map((benefit, idx) => (
-                          <div key={idx} className="flex items-start gap-2">
-                            <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-0.5" />
-                            <span className="text-sm text-[#666666]">{benefit}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <Link to={`/servicios/${service.id}`}>
-                      <Button size="lg" className="bg-[#EA580C] hover:bg-[#C2410C]">
-                        Ver Detalles
-                        <ArrowRight className="ml-2" />
-                      </Button>
-                    </Link>
+            return <motion.div 
+              key={service.id} 
+              id={service.id} 
+              initial={{
+                opacity: 0,
+                y: 40
+              }} 
+              whileInView={{
+                opacity: 1,
+                y: 0
+              }} 
+              viewport={{
+                once: true
+              }} 
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1
+              }} 
+              className="group rounded-[20px] border border-gray-100 bg-white hover:shadow-2xl hover:border-[#EA580C]/20 transition-all duration-300 overflow-hidden"
+            >
+              <div className="p-8 lg:p-10">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 bg-[#EA580C]/10 rounded-xl flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-[#EA580C]" />
                   </div>
-                </motion.div>;
+                  <div className="flex-1">
+                    <h2 className="text-2xl md:text-3xl text-[#030711] font-bold mb-2 group-hover:text-[#EA580C] transition-colors">
+                      {service.title}
+                    </h2>
+                    <p className="text-base text-[#666666] leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Benefits */}
+                <div className="mb-6">
+                  <h3 className="text-sm text-[#030711] font-semibold mb-3 uppercase tracking-wide">
+                    Beneficios Clave
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {service.benefits.slice(0, 4).map((benefit, idx) => (
+                      <div key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-[#666666]">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <Link to={`/servicios/${service.id}`}>
+                  <Button size="lg" className="bg-[#EA580C] hover:bg-[#C2410C] w-full sm:w-auto">
+                    Ver Detalles del Servicio
+                    <ArrowRight className="ml-2" />
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>;
           })}
           </div>
         </section>
