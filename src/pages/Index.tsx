@@ -14,12 +14,12 @@ const Index = () => {
       <main>
         <Hero />
         <WhatWeDo />
-        <ProcessSteps />
-        <Portfolio />
-        <Pricing />
-        <FAQ />
+        <ProcessSteps className="pt-[200px]" />
+        <Portfolio className="pt-[200px]" />
+        <Pricing className="pt-[200px]" />
+        <FAQ className="pt-[200px]" />
       </main>
-      <Footer />
+      <Footer className="pt-[200px]" />
       <ScrollToTop />
     </div>;
 };
