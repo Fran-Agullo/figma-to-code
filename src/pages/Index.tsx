@@ -13,7 +13,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <WhatWeDo />
+        <WhatWeDo className="pt-[100px]" />
         <ProcessSteps />
         <Portfolio />
         <Pricing />
