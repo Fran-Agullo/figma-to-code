@@ -33,61 +33,81 @@ export default function Portfolio() {
         </section>
 
         {/* Stacked Case Studies */}
-        <section className="px-6 lg:px-12 py-16 bg-white">
-          <div className="max-w-[1200px] mx-auto space-y-8">
+        <section className="px-3 lg:px-6 py-16 bg-white">
+          <div className="max-w-[1200px] mx-auto space-y-12">
             {caseStudies.map((project, index) => (
               <motion.a
                 key={project.id}
-                href={`/case-studies/${project.id}`}
+                href={`/portfolio/${project.id}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="block group relative overflow-hidden rounded-[20px] border border-[rgba(221,234,237,1)] bg-[#111111] shadow-[inset_0px_1px_20px_0px_rgba(255,255,255,0.25)] hover:shadow-[inset_0px_1px_30px_0px_rgba(255,255,255,0.35)] transition-all duration-300"
+                className="block group relative overflow-hidden rounded-[20px] border border-[rgba(221,234,237,1)] bg-[#111111] shadow-[inset_0px_1px_20px_0px_rgba(255,255,255,0.25)] hover:shadow-[inset_0px_1px_40px_0px_rgba(255,255,255,0.4),0_20px_60px_-15px_rgba(234,88,12,0.5)] transition-all duration-500"
+                style={{
+                  transformStyle: 'preserve-3d',
+                  perspective: '1000px'
+                }}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const x = e.clientX - rect.left;
+                  const y = e.clientY - rect.top;
+                  const centerX = rect.width / 2;
+                  const centerY = rect.height / 2;
+                  const rotateX = (y - centerY) / 20;
+                  const rotateY = (centerX - x) / 20;
+                  e.currentTarget.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+                }}
               >
-                {/* Image */}
-                <div className="relative aspect-[16/9] overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111111]" />
-                </div>
+                {/* Content Grid */}
+                <div className="grid lg:grid-cols-[400px,1fr] gap-0">
+                  {/* Image */}
+                  <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r lg:bg-gradient-to-r from-transparent to-[#111111]/80" />
+                  </div>
 
-                {/* Content Overlay */}
-                <div className="relative p-8 lg:p-12">
-                  <div className="space-y-6">
-                    {/* Title with gradient mask */}
-                    <h3 
-                      className="text-4xl md:text-5xl lg:text-6xl font-bold text-white"
-                      style={{
-                        WebkitMaskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)',
-                        maskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)'
-                      }}
-                    >
-                      {project.title}
-                    </h3>
+                  {/* Content */}
+                  <div className="relative p-6 lg:p-10 flex flex-col justify-center">
+                    <div className="space-y-4">
+                      {/* Title with gradient mask */}
+                      <h3 
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold text-white"
+                        style={{
+                          WebkitMaskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)',
+                          maskImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%)'
+                        }}
+                      >
+                        {project.title}
+                      </h3>
 
-                    {/* Description */}
-                    <p className="text-lg text-white/80 max-w-3xl leading-relaxed">
-                      {project.subtitle}
-                    </p>
+                      {/* Description */}
+                      <p className="text-base lg:text-lg text-white/80 leading-relaxed">
+                        {project.subtitle}
+                      </p>
 
-                    <div className="h-8" />
+                      <div className="h-4" />
 
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-3">
-                      {project.tags.map((tag, tagIndex) => (
-                        <div
-                          key={tagIndex}
-                          className="px-4 py-2 rounded-[10px] border border-[rgba(255,255,255,0.1)] bg-transparent"
-                        >
-                          <span className="text-sm text-white">
-                            {tag}
-                          </span>
-                        </div>
-                      ))}
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <div
+                            key={tagIndex}
+                            className="px-3 py-1.5 rounded-[10px] border border-[rgba(255,255,255,0.1)] bg-transparent"
+                          >
+                            <span className="text-sm text-white">
+                              {tag}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -97,30 +117,33 @@ export default function Portfolio() {
         </section>
 
         {/* CTA Section */}
-        <section className="px-6 lg:px-12 py-24 bg-gradient-to-br from-[#EA580C]/5 to-white">
-          <div className="max-w-[800px] mx-auto text-center">
+        <section className="px-3 lg:px-6 py-24 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
+          <div className="max-w-[1440px] mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#030711] mb-6">
-                ¿Listo para ser nuestro próximo caso de éxito?
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                ¿Listo para transformar tu negocio?
               </h2>
-              <p className="text-xl text-[#666666] mb-8">
-                Agenda una consultoría gratuita y descubre cómo podemos transformar tu negocio
+              <p className="text-xl text-white/90 mb-8">
+                Agenda una consulta gratuita y descubre cómo nuestros servicios pueden impulsar tu crecimiento.
               </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-[#EA580C] hover:bg-[#EA580C]/90 text-white px-8 py-6 text-lg"
-              >
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contacto">
-                  Agenda tu consultoría
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+                    Agendar Consulta
+                    <ArrowRight className="ml-2" />
+                  </Button>
                 </Link>
-              </Button>
+                <Link to="/portfolio">
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent text-white border-white hover:bg-white/10">
+                    Ver Casos de Éxito
+                  </Button>
+                </Link>
+              </div>
             </motion.div>
           </div>
         </section>
