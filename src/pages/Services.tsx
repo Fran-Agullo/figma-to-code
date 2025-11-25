@@ -31,7 +31,7 @@ const Services = () => {
             duration: 0.6
           }}>
               <h1 className="text-6xl md:text-7xl text-[#030711] tracking-tight leading-[1.1] mb-6">
-                Nuestros <span className="text-[#EA580C]">Servicios</span>
+                Nuestros Servicios
               </h1>
               <p className="text-xl text-[#8a8a8f] max-w-3xl mx-auto">
                 Soluciones digitales completas para impulsar el crecimiento de tu negocio. 

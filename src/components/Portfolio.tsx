@@ -7,7 +7,7 @@ export function Portfolio() {
 
   return (
     <section id="portfolio" className="py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-purple-50/20 to-white">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="text-5xl text-[#030711] tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
             Casos de éxito que <span className="text-[#EA580C]">hablan por sí solos</span>
