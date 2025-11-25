@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { ScrollIndicator } from './ScrollIndicator';
 export function Hero() {
   return <section className="relative min-h-screen flex items-center pb-0 px-[50px] overflow-hidden bg-white" aria-labelledby="hero-heading">
       {/* Video background */}
@@ -14,7 +15,7 @@ export function Hero() {
       </div>
 
       <div className="relative w-full">
-        <div className="items-start justify-start flex flex-row">
+        <div className="items-start justify-between flex flex-row">
           {/* Left-aligned Content */}
           <motion.div initial={{
           opacity: 0,
@@ -97,6 +98,11 @@ futuro.</span>
             {/* Stats */}
             
           </motion.div>
+
+          {/* Scroll Indicator - Right side */}
+          <div className="hidden lg:flex items-center pt-24">
+            <ScrollIndicator />
+          </div>
         </div>
       </div>
     </section>;
