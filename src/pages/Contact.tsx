@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import { supabase } from '@/integrations/supabase/client';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
@@ -58,7 +59,20 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      console.log('Form data:', data);
+      // Save to Supabase
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          name: data.name,
+          email: data.email,
+          company: data.company,
+          phone: data.phone,
+          service: data.service,
+          budget: data.budget,
+          message: data.message,
+        }]);
+
+      if (error) throw error;
       
       toast({
         title: '¡Mensaje enviado!',
@@ -70,6 +84,7 @@ const Contact = () => {
         navigate('/gracias');
       }, 1500);
     } catch (error) {
+      console.error('Error al enviar formulario:', error);
       toast({
         title: 'Error',
         description: 'Hubo un problema al enviar el mensaje. Inténtalo de nuevo.',
