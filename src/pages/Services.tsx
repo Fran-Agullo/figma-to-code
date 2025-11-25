@@ -29,7 +29,7 @@ const Services = () => {
             y: 0
           }} transition={{
             duration: 0.6
-          }}>
+          }} className="pt-[200px]">
               <h1 className="text-6xl md:text-7xl text-[#030711] tracking-tight leading-[1.1] mb-6">
                 Nuestros Servicios
               </h1>
@@ -49,26 +49,18 @@ const Services = () => {
           <div className="max-w-[1200px] mx-auto space-y-12">
             {services.map((service, index) => {
             const Icon = iconMap[service.icon];
-            return <motion.div 
-              key={service.id} 
-              id={service.id} 
-              initial={{
-                opacity: 0,
-                y: 40
-              }} 
-              whileInView={{
-                opacity: 1,
-                y: 0
-              }} 
-              viewport={{
-                once: true
-              }} 
-              transition={{
-                duration: 0.6,
-                delay: index * 0.1
-              }} 
-              className="group rounded-[20px] border border-gray-100 bg-white hover:shadow-2xl hover:border-[#EA580C]/20 transition-all duration-300 overflow-hidden"
-            >
+            return <motion.div key={service.id} id={service.id} initial={{
+              opacity: 0,
+              y: 40
+            }} whileInView={{
+              opacity: 1,
+              y: 0
+            }} viewport={{
+              once: true
+            }} transition={{
+              duration: 0.6,
+              delay: index * 0.1
+            }} className="group rounded-[20px] border border-gray-100 bg-white hover:shadow-2xl hover:border-[#EA580C]/20 transition-all duration-300 overflow-hidden">
               <div className="p-8 lg:p-10">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="flex-shrink-0 w-14 h-14 bg-[#EA580C]/10 rounded-xl flex items-center justify-center">
@@ -90,12 +82,10 @@ const Services = () => {
                     Beneficios Clave
                   </h3>
                   <div className="grid md:grid-cols-2 gap-3">
-                    {service.benefits.slice(0, 4).map((benefit, idx) => (
-                      <div key={idx} className="flex items-start gap-2">
+                    {service.benefits.slice(0, 4).map((benefit, idx) => <div key={idx} className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-[#666666]">{benefit}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
 
