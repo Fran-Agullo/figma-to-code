@@ -25,7 +25,7 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="space-y-8 max-w-2xl text-left pt-24">
+        }} className="space-y-8 max-w-2xl text-left pt-24 py-0">
             
 
             <div className="space-y-4">
@@ -39,8 +39,9 @@ export function Hero() {
               }} transition={{
                 delay: 0.3,
                 duration: 0.6
-              }} className="block">
-                  Transforma tu <span className="text-[#EA580C]">presente.</span>
+              }} className="block text-6xl">
+                  Transforma tu <span className="text-[#EA580C]">
+presente.</span>
                 </motion.span>
                 <motion.span initial={{
                 opacity: 0,
@@ -51,8 +52,9 @@ export function Hero() {
               }} transition={{
                 delay: 0.4,
                 duration: 0.6
-              }} className="block">
-                  Mira hacia el <span className="text-[#EA580C]">futuro.</span>
+              }} className="block text-6xl">
+                  Mira hacia el <span className="text-[#EA580C]">
+futuro.</span>
                 </motion.span>
               </h1>
             </div>
