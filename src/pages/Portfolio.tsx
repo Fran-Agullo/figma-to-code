@@ -15,7 +15,7 @@ export default function Portfolio() {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="px-6 lg:px-12 py-24 bg-gradient-to-br from-white via-purple-50/20 to-white">
+        <section className="px-8 lg:px-16 py-24 bg-gradient-to-br from-white via-purple-50/20 to-white">
           <div className="max-w-[1200px] mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function Portfolio() {
         </section>
 
         {/* Stacked Case Studies */}
-        <section className="px-3 lg:px-6 py-16 bg-white">
+        <section className="px-8 lg:px-16 py-16 bg-white">
           <div className="max-w-[1200px] mx-auto space-y-12">
             {caseStudies.map((project, index) => (
               <motion.a
@@ -43,24 +43,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="block group relative overflow-hidden rounded-[20px] border border-border bg-card shadow-sm hover:shadow-[0_20px_60px_-15px_rgba(234,88,12,0.5)] transition-all duration-500"
-                style={{
-                  transformStyle: 'preserve-3d',
-                  perspective: '1000px'
-                }}
-                onMouseMove={(e) => {
-                  const rect = e.currentTarget.getBoundingClientRect();
-                  const x = e.clientX - rect.left;
-                  const y = e.clientY - rect.top;
-                  const centerX = rect.width / 2;
-                  const centerY = rect.height / 2;
-                  const rotateX = (y - centerY) / 20;
-                  const rotateY = (centerX - x) / 20;
-                  e.currentTarget.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-                }}
+                className="block group relative overflow-hidden rounded-[20px] border border-gray-100 bg-white hover:shadow-2xl hover:border-[#EA580C]/20 transition-all duration-300"
               >
                 {/* Content Grid */}
                 <div className="grid lg:grid-cols-[400px,1fr] gap-0">
@@ -77,8 +60,8 @@ export default function Portfolio() {
                   {/* Content */}
                   <div className="relative p-6 lg:p-10 flex flex-col justify-center">
                     <div className="space-y-4">
-                      {/* Title with gradient mask */}
-                      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+                      {/* Title */}
+                      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#030711] group-hover:text-[#EA580C] transition-colors">
                         {project.title}
                       </h3>
 
@@ -111,7 +94,7 @@ export default function Portfolio() {
         </section>
 
         {/* CTA Section */}
-        <section className="px-3 lg:px-6 py-24 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
+        <section className="px-8 lg:px-16 py-24 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
           <div className="max-w-[1440px] mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}

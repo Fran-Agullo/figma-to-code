@@ -19,7 +19,7 @@ const Services = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-16 px-3 lg:px-6 bg-gradient-to-br from-white via-orange-50/30 to-white">
+        <section className="pt-32 pb-16 px-8 lg:px-16 bg-gradient-to-br from-white via-orange-50/30 to-white">
           <div className="max-w-[1440px] mx-auto text-center">
             <motion.div initial={{
             opacity: 0,
@@ -45,7 +45,7 @@ const Services = () => {
         
 
         {/* Detailed Service Sections */}
-        <section className="py-24 px-3 lg:px-6 bg-gray-50">
+        <section className="py-24 px-8 lg:px-16 bg-gray-50">
           <div className="max-w-[1200px] mx-auto space-y-24">
             {services.map((service, index) => {
             const Icon = iconMap[service.icon];
@@ -60,62 +60,37 @@ const Services = () => {
             }} transition={{
               duration: 0.6
             }} className="scroll-mt-24">
-                  <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-                    {/* Content */}
+                  <div className="space-y-6">
                     <div>
-                      <h2 className="text-3xl md:text-4xl text-[#030711] font-bold mb-4">
+                      <h2 className="text-3xl md:text-4xl text-[#030711] font-bold mb-3">
                         {service.title}
                       </h2>
-                      <p className="text-base text-[#666666] mb-6 leading-relaxed">
+                      <p className="text-base text-[#666666] leading-relaxed">
                         {service.description}
                       </p>
-
-                      {/* Benefits */}
-                      <div className="mb-6">
-                        <h3 className="text-xl text-[#030711] font-semibold mb-3">
-                          Beneficios Clave
-                        </h3>
-                        <div className="space-y-2">
-                          {service.benefits.slice(0, 3).map((benefit, idx) => (
-                            <div key={idx} className="flex items-start gap-2">
-                              <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-1" />
-                              <span className="text-sm text-[#666666]">{benefit}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      <Link to={`/servicios/${service.id}`}>
-                        <Button size="lg" className="bg-[#EA580C] hover:bg-[#C2410C]">
-                          Ver Detalles del Servicio
-                          <ArrowRight className="ml-2" />
-                        </Button>
-                      </Link>
                     </div>
 
-                    {/* Process Steps */}
+                    {/* Benefits */}
                     <div>
-                      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <h3 className="text-xl text-[#030711] font-semibold mb-4">
-                          Nuestro Proceso
-                        </h3>
-                        <div className="space-y-4">
-                          {service.process.slice(0, 3).map((step, idx) => (
-                            <div key={idx} className="flex gap-3">
-                              <div className="flex-shrink-0 w-8 h-8 bg-[#EA580C] text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                {idx + 1}
-                              </div>
-                              <div>
-                                <h4 className="text-base font-semibold text-[#030711] mb-1">
-                                  {step.step}
-                                </h4>
-                                <p className="text-sm text-[#666666]">{step.description}</p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
+                      <h3 className="text-lg text-[#030711] font-semibold mb-2">
+                        Beneficios
+                      </h3>
+                      <div className="space-y-2">
+                        {service.benefits.slice(0, 3).map((benefit, idx) => (
+                          <div key={idx} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-4 h-4 text-[#EA580C] flex-shrink-0 mt-0.5" />
+                            <span className="text-sm text-[#666666]">{benefit}</span>
+                          </div>
+                        ))}
                       </div>
                     </div>
+
+                    <Link to={`/servicios/${service.id}`}>
+                      <Button size="lg" className="bg-[#EA580C] hover:bg-[#C2410C]">
+                        Ver Detalles
+                        <ArrowRight className="ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </motion.div>;
           })}
@@ -123,7 +98,7 @@ const Services = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 px-3 lg:px-6 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
+        <section className="py-24 px-8 lg:px-16 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
           <div className="max-w-[1440px] mx-auto text-center">
             <motion.div initial={{
             opacity: 0,
