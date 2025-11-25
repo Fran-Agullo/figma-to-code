@@ -37,8 +37,7 @@ export function Hero() {
             }} transition={{
               delay: 0.3,
               duration: 0.6
-            }} className="block">
-                Transforma tu <span className="text-[#EA580C]">presente.</span>
+            }} className="block">Hola Hola tu presente.<span className="text-[#EA580C]">presente.</span>
               </motion.span>
               <motion.span initial={{
               opacity: 0,
