@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { ScrollIndicator } from './ScrollIndicator';
 export function Hero() {
-  return <section className="relative min-h-screen flex items-center pb-0 px-[50px] overflow-hidden bg-white" aria-labelledby="hero-heading">
+  return <section className="relative min-h-screen flex items-end pb-0 overflow-hidden bg-white" aria-labelledby="hero-heading">
       {/* Video background */}
-      <div className="absolute top-0 left-0 right-0 bottom-[100px]" aria-hidden="true">
+      <div className="absolute top-0 left-0 right-0 bottom-0" aria-hidden="true">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" poster="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-poster-00001.jpg">
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.mp4" type="video/mp4" />
           <source src="https://cdn.prod.website-files.com/61e461cb7ac4a96a83a9538a/659ecc4543469978cf61fc17_Pexels product video-transcode.webm" type="video/webm" />
@@ -14,8 +14,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative w-full max-w-[1400px] mx-auto absolute bottom-[100px] left-0 right-0">
-        <div className="gap-8 lg:gap-12 flex-row flex items-end justify-between px-[50px]">
+      <div className="relative w-full max-w-[1400px] mx-auto mb-[100px] px-6 md:px-12 lg:px-[50px]">
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 lg:gap-12">
           {/* Left side - Main heading */}
           <motion.div initial={{
           opacity: 0,
@@ -26,8 +26,8 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="flex-1 pt-24">
-            <h1 id="hero-heading" className="text-5xl lg:text-7xl text-white tracking-tight leading-[1.1] font-bold">
+        }} className="flex-1">
+            <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white tracking-tight leading-[1.1] font-bold">
               <motion.span initial={{
               opacity: 0,
               y: 20
@@ -37,7 +37,7 @@ export function Hero() {
             }} transition={{
               delay: 0.3,
               duration: 0.6
-            }} className="block text-6xl">
+            }} className="block">
                 Transforma tu <span className="text-[#EA580C]">presente.</span>
               </motion.span>
               <motion.span initial={{
@@ -49,7 +49,7 @@ export function Hero() {
             }} transition={{
               delay: 0.4,
               duration: 0.6
-            }} className="block text-6xl">
+            }} className="block">
                 Mira hacia el <span className="text-[#EA580C]">futuro.</span>
               </motion.span>
             </h1>
@@ -66,9 +66,9 @@ export function Hero() {
           duration: 0.8,
           ease: 'easeOut',
           delay: 0.2
-        }} className="hidden lg:flex flex-row items-start gap-12 pt-24">
+        }} className="flex lg:flex-row flex-col items-start lg:items-start gap-6 lg:gap-12 w-full lg:w-auto">
             {/* Description and Button column */}
-            <div className="flex flex-col items-end gap-8">
+            <div className="flex flex-col items-start lg:items-end gap-6 lg:gap-8">
               {/* Description text */}
               <motion.div initial={{
               opacity: 0,
@@ -79,8 +79,8 @@ export function Hero() {
             }} transition={{
               delay: 0.5,
               duration: 0.6
-            }} className="text-right max-w-xs">
-                <p className="text-lg text-white/90 leading-relaxed">
+            }} className="text-left lg:text-right max-w-xs">
+                <p className="text-base lg:text-lg text-white/90 leading-relaxed">
                   Agencia de diseño<br />
                   de producto UI / UX.<br />
                   Consultoría de producto
@@ -112,7 +112,7 @@ export function Hero() {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="pt-2">
+            <div className="hidden lg:block pt-2">
               <ScrollIndicator />
             </div>
           </motion.div>
