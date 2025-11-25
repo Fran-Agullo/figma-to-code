@@ -4,44 +4,6 @@ import { Sparkles, Mail, Linkedin, Instagram, Phone, MapPin, ArrowRight } from '
 export function Footer() {
   return <footer className="bg-[#030711] text-white pt-20 pb-8 px-6 lg:px-12" role="contentinfo">
       <div className="max-w-[1200px] mx-auto">
-        {/* CTA Section */}
-        <motion.div initial={{
-        opacity: 0,
-        y: 30
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} viewport={{
-        once: true
-      }} transition={{
-        duration: 0.6
-      }} className="bg-gradient-to-br from-[#EA580C] to-[#FF6B00] rounded-3xl p-12 mb-16 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl" />
-          </div>
-
-          <div className="relative grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                ¿Preparado? ¡Vamos a hacer algo grande!
-              </h2>
-            </div>
-            <div className="text-right">
-              <p className="text-white/90 mb-6">
-                Agenda una llamada y descubre cómo como podemos cambiar para siempre su forma de diseñar.
-                <br />
-                Agencia de diseño de producto,UX / UI.
-              </p>
-              <Link to="/contacto">
-                <button className="bg-white text-[#EA580C] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
-                  Contacto
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Branding */}
           <div>

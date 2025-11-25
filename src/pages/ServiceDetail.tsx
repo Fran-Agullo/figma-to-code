@@ -183,7 +183,7 @@ const ServiceDetail = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
-          <div className="relative h-full flex items-end px-3 lg:px-6 pb-16">
+          <div className="relative h-full flex items-end px-8 lg:px-16 pb-16">
             <div className="max-w-[1200px] mx-auto w-full">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -203,7 +203,7 @@ const ServiceDetail = () => {
 
         {/* Process Note */}
         {service.note && (
-          <section className="py-12 px-3 lg:px-6 bg-orange-50">
+          <section className="py-12 px-8 lg:px-16 bg-orange-50">
             <div className="max-w-[1200px] mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -221,7 +221,7 @@ const ServiceDetail = () => {
         )}
 
         {/* Content Sections */}
-        <section className="py-16 px-3 lg:px-6">
+        <section className="py-16 px-8 lg:px-16">
           <div className="max-w-[1200px] mx-auto space-y-16">
             {service.sections.map((section, index) => (
               <motion.div
@@ -255,7 +255,7 @@ const ServiceDetail = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 px-3 lg:px-6 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
+        <section className="py-24 px-8 lg:px-16 bg-gradient-to-br from-[#EA580C] to-[#C2410C]">
           <div className="max-w-[1440px] mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
