@@ -25,9 +25,9 @@ const faqs = [
   }
 ];
 
-export function FAQ() {
+export function FAQ({ className = "" }: { className?: string }) {
   return (
-    <section className="py-24 px-6 lg:px-12 bg-white">
+    <section className={`py-24 px-6 lg:px-12 bg-white ${className}`}>
       <div className="max-w-[1200px] mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 

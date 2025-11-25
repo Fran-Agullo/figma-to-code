@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Sparkles, Mail, Linkedin, Instagram, Phone, MapPin, ArrowRight } from 'lucide-react';
-export function Footer() {
-  return <footer className="bg-[#030711] text-white pt-20 pb-8 px-6 lg:px-12" role="contentinfo">
+export function Footer({ className = "" }: { className?: string }) {
+  return <footer className={`bg-[#030711] text-white pt-20 pb-8 px-6 lg:px-12 ${className}`} role="contentinfo">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Branding */}

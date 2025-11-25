@@ -7,9 +7,9 @@ const steps = [
   { number: '3', icon: <Zap className="w-8 h-8" />, title: 'Recibe resultados', description: 'Implementamos y optimizamos continuamente.', gradient: 'from-orange-600 to-orange-700' },
 ];
 
-export function ProcessSteps() {
+export function ProcessSteps({ className = "" }: { className?: string }) {
   return (
-    <section id="proceso" className="py-24 px-6 lg:px-12 bg-white">
+    <section id="proceso" className={`py-24 px-6 lg:px-12 bg-white ${className}`}>
       <div className="max-w-[1200px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="text-5xl tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">

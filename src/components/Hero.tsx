@@ -14,8 +14,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative w-full max-w-[1400px] mx-auto">
-        <div className="gap-8 lg:gap-12 flex-row flex items-end justify-between">
+      <div className="relative w-full max-w-[1400px] mx-auto absolute bottom-[100px] left-0 right-0">
+        <div className="gap-8 lg:gap-12 flex-row flex items-end justify-between px-[50px]">
           {/* Left side - Main heading */}
           <motion.div initial={{
           opacity: 0,

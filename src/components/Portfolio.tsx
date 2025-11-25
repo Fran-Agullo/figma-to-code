@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 
-export function Portfolio() {
+export function Portfolio({ className = "" }: { className?: string }) {
   const projects = caseStudies.slice(0, 6);
 
   return (
-    <section id="portfolio" className="py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-purple-50/20 to-white">
+    <section id="portfolio" className={`py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-purple-50/20 to-white ${className}`}>
       <div className="max-w-[1200px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="text-5xl text-[#030711] tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
