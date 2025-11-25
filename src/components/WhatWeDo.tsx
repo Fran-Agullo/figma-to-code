@@ -31,7 +31,7 @@ const stats = [
 
 export function WhatWeDo() {
   return (
-    <section id="servicios" className="relative py-12 px-6 lg:px-12">
+    <section id="servicios" className="relative pb-12 px-6 lg:px-12">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-16">
           {/* Sticky Left Content */}
