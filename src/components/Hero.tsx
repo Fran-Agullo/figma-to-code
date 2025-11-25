@@ -29,7 +29,7 @@ export function Hero() {
             
 
             <div className="space-y-4">
-              <h1 id="hero-heading" className="text-5xl lg:text-7xl text-[#030711] tracking-tight leading-[1.1] font-bold">
+              <h1 id="hero-heading" className="text-5xl lg:text-7xl text-white tracking-tight leading-[1.1] font-bold">
                 <motion.span initial={{
                 opacity: 0,
                 y: 20
@@ -66,7 +66,7 @@ export function Hero() {
           }} transition={{
             delay: 0.6,
             duration: 0.6
-          }} className="text-xl text-[#666666] leading-relaxed max-w-3xl">
+          }} className="text-xl text-white/90 leading-relaxed max-w-3xl">
               En BirdieAgency transformamos la confusión y la fricción digital en experiencias de marca claras, memorables y funcionales. Diseño, usabilidad y análisis, impulsamos empresas en entornos digitales.
             </motion.p>
 
