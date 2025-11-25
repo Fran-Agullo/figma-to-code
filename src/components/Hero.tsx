@@ -13,7 +13,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative max-w-[1200px] mx-auto">
+      <div className="relative w-full">
         <div className="items-start justify-start flex flex-row">
           {/* Left-aligned Content */}
           <motion.div initial={{
@@ -25,7 +25,7 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="space-y-8 max-w-4xl text-left pt-24">
+        }} className="space-y-8 max-w-2xl text-left pt-24">
             
 
             <div className="space-y-4">
