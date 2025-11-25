@@ -4,26 +4,27 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
-
 const ThankYou = () => {
-  return (
-    <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
+  return <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
       <Header />
       
       <main>
         <section className="pt-32 pb-24 px-6 lg:px-12 min-h-[80vh] flex items-center">
           <div className="max-w-[800px] mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            scale: 0.9
+          }} animate={{
+            opacity: 1,
+            scale: 1
+          }} transition={{
+            duration: 0.5
+          }}>
               <div className="w-24 h-24 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-8">
                 <CheckCircle2 className="w-12 h-12 text-green-500" />
               </div>
               
-              <h1 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.1] mb-6">
-                ¡Gracias por <span className="text-[#EA580C]">Contactarnos!</span>
+              <h1 className="text-5xl md:text-6xl text-[#030711] tracking-tight leading-[1.1] mb-6">¡Gracias por todo Contactarnos!<span className="text-[#EA580C]">Contactarnos!</span>
               </h1>
               
               <p className="text-xl text-[#8a8a8f] mb-8">
@@ -110,8 +111,6 @@ const ThankYou = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ThankYou;
