@@ -6,14 +6,12 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import { services } from '@/data/services';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { TrendingUp, Search, Palette, Code, Target, BarChart3, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { TrendingUp, Search, Laptop, Cpu, ArrowRight, CheckCircle2 } from 'lucide-react';
 const iconMap: Record<string, any> = {
   TrendingUp,
   Search,
-  Palette,
-  Code,
-  Target,
-  BarChart3
+  Laptop,
+  Cpu
 };
 const Services = () => {
   return <div className="min-h-screen bg-white font-['Manrope',sans-serif]" lang="es">
