@@ -1,113 +1,109 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Target, TrendingUp, Lightbulb, Zap, Rocket, BarChart3 } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Laptop, Cpu, Lightbulb, Zap } from 'lucide-react';
 import { services as servicesData } from '../data/services';
-import { useRef } from 'react';
 
 const iconMap: Record<string, any> = {
-  Target,
-  TrendingUp,
+  Laptop,
+  Cpu,
   Lightbulb,
-  Zap,
-  Rocket,
-  BarChart3
+  Zap
 };
 
 const services = servicesData.map(service => ({
   ...service,
-  icon: iconMap[service.icon] || Target,
-  shortDescription: service.description.substring(0, 100) + '...'
+  icon: iconMap[service.icon] || Laptop
 }));
 
+const stats = [
+  { number: "+100", text: "Empresas colaboradoras" },
+  { number: "+1.100M", text: "Usuarios de nuestros productos" },
+  { number: "+150M€", text: "Inversión en nuestros productos" },
+  { number: "4 exits", text: "Empresas vendidas" }
+];
+
 export function WhatWeDo() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
   return (
-    <section ref={containerRef} id="servicios" className="relative py-24 px-6 lg:px-12">
+    <section id="servicios" className="relative py-12 px-6 lg:px-12">
       <div className="max-w-[1200px] mx-auto">
-        {/* Sticky Header */}
-        <div className="sticky top-24 z-10 bg-background/80 backdrop-blur-sm pb-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-left"
-          >
-            <h2 className="text-5xl md:text-6xl tracking-tight leading-[1.15] mb-6 font-bold text-[#030711]">
-              Servicios
-            </h2>
-            <p className="text-lg text-[#666666] max-w-2xl">
-              Soluciones diseñadas para impulsar tu negocio con resultados medibles
-            </p>
-          </motion.div>
-        </div>
+        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-16">
+          {/* Sticky Left Content */}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-8"
+            >
+              <div className="text-sm font-medium text-[#EA580C] uppercase tracking-wider">
+                ¿Qué hacemos?
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                Un <span className="text-[#EA580C]">producto digital</span> para tu empresa diseñado por seniors.
+              </h2>
 
-        {/* Scrolling Cards */}
-        <div className="space-y-32 mt-16">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
-            const isEven = index % 2 === 0;
-            
-            return (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}
-              >
-                {/* Text Content */}
-                <div className="flex-1 space-y-6">
-                  <div className="w-16 h-16 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-[#EA580C]" />
-                  </div>
-                  
-                  <h3 className="text-3xl md:text-4xl font-bold text-[#030711]">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-lg text-[#666666] leading-relaxed">
-                    {service.shortDescription}
-                  </p>
-
-                  <div className="pt-4">
-                    <a 
-                      href={`/servicios#${service.id}`}
-                      className="inline-flex items-center gap-2 text-[#EA580C] font-medium hover:gap-3 transition-all"
-                    >
-                      Ver detalles
-                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Card Visual */}
-                <div className="flex-1 w-full">
+              {/* Stats Grid */}
+              <div className="grid grid-cols-2 gap-6 pt-8">
+                {stats.map((stat, index) => (
                   <motion.div
-                    whileHover={{ scale: 1.02, y: -8 }}
-                    transition={{ duration: 0.3 }}
-                    className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl hover:border-[#EA580C]/20 transition-all"
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
-                    <div className="space-y-4">
-                      {service.features.slice(0, 3).map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-3">
-                          <div className="w-6 h-6 rounded-full bg-[#EA580C]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                            <svg className="w-4 h-4 text-[#EA580C]" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                            </svg>
-                          </div>
-                          <span className="text-[#030711] text-base leading-relaxed">{feature}</span>
-                        </div>
-                      ))}
+                    <h4 className="text-2xl md:text-3xl font-bold text-[#030711] mb-2">
+                      {stat.number}
+                    </h4>
+                    <p className="text-sm text-[#666666]">
+                      {stat.text}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Scrolling Timeline Right */}
+          <div className="relative">
+            <div className="space-y-8">
+              {services.map((service, index) => {
+                const IconComponent = service.icon;
+                
+                return (
+                  <motion.div
+                    key={service.id}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.6, delay: index * 0.15 }}
+                    className="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:border-[#EA580C]/20 transition-all"
+                  >
+                    {/* Icon */}
+                    <div className="w-12 h-12 bg-[#EA580C]/10 rounded-xl flex items-center justify-center mb-6">
+                      <IconComponent className="w-6 h-6 text-[#EA580C]" />
+                    </div>
+
+                    {/* Content */}
+                    <p className="text-base text-[#666666] leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+
+                    {/* Step Number */}
+                    <div className="absolute top-8 right-8 w-10 h-10 bg-[#030711] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      {index + 1}
                     </div>
                   </motion.div>
-                </div>
-              </motion.div>
-            );
-          })}
+                );
+              })}
+            </div>
+
+            {/* Vertical Timeline Line */}
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#EA580C] via-[#EA580C]/50 to-transparent hidden lg:block" 
+                 style={{ marginLeft: '-2rem' }}
+            />
+          </div>
         </div>
       </div>
     </section>
