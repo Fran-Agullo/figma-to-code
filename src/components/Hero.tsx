@@ -25,7 +25,7 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="space-y-8 max-w-2xl text-left pt-24 py-0">
+        }} className="space-y-5 max-w-2xl text-left pt-24 py-0">
             
 
             <div className="space-y-4">
