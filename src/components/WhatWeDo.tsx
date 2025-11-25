@@ -9,9 +9,17 @@ const iconMap: Record<string, any> = {
   Zap
 };
 
-const services = servicesData.map(service => ({
+const servicesTitles = [
+  "Diseño de producto digital (Web y app)",
+  "Auditoría de experiencia de usuario",
+  "Growth Digital",
+  "IA y automatización"
+];
+
+const services = servicesData.map((service, index) => ({
   ...service,
-  icon: iconMap[service.icon] || Laptop
+  icon: iconMap[service.icon] || Laptop,
+  displayTitle: servicesTitles[index] || service.title
 }));
 
 const stats = [
@@ -84,6 +92,11 @@ export function WhatWeDo() {
                     <div className="w-12 h-12 bg-[#EA580C]/10 rounded-xl flex items-center justify-center mb-6">
                       <IconComponent className="w-6 h-6 text-[#EA580C]" />
                     </div>
+
+                    {/* Title */}
+                    <h3 className="text-xl md:text-2xl font-bold text-[#030711] mb-4">
+                      {service.displayTitle}
+                    </h3>
 
                     {/* Content */}
                     <p className="text-base text-[#666666] leading-relaxed mb-6">
