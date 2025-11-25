@@ -13,9 +13,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative max-w-[1440px] mx-auto">
-        <div className="items-center justify-start flex flex-row">
-          {/* Center Content */}
+      <div className="relative max-w-[1200px] mx-auto">
+        <div className="items-start justify-start flex flex-row">
+          {/* Left-aligned Content */}
           <motion.div initial={{
           opacity: 0,
           x: -50
@@ -25,7 +25,7 @@ export function Hero() {
         }} transition={{
           duration: 0.8,
           ease: 'easeOut'
-        }} className="space-y-8 max-w-4xl text-center pt-24">
+        }} className="space-y-8 max-w-4xl text-left pt-24">
             
 
             <div className="space-y-4">
@@ -51,7 +51,7 @@ export function Hero() {
               }} transition={{
                 delay: 0.4,
                 duration: 0.6
-              }} className="block text-left">
+              }} className="block">
                   Mira hacia el <span className="text-[#EA580C]">futuro.</span>
                 </motion.span>
               </h1>
@@ -66,7 +66,7 @@ export function Hero() {
           }} transition={{
             delay: 0.6,
             duration: 0.6
-          }} className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto text-left">
+          }} className="text-xl text-gray-300 leading-relaxed max-w-3xl">
               En BirdieAgency transformamos la confusión y la fricción digital en experiencias de marca claras, memorables y funcionales. Diseño, usabilidad y análisis, impulsamos empresas en entornos digitales.
             </motion.p>
 

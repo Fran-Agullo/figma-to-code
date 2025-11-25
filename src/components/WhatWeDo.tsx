@@ -16,8 +16,8 @@ const services = servicesData.map(service => ({
   icon: iconMap[service.icon] || Target
 }));
 export function WhatWeDo() {
-  return <section id="servicios" className="py-24 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white">
-      <div className="max-w-[1440px] mx-auto">
+  return <section id="servicios" className="py-12 px-6 lg:px-12 bg-gradient-to-br from-white via-orange-50/30 to-white">
+      <div className="max-w-[1200px] mx-auto">
         {/* Header Section */}
         <motion.div initial={{
         opacity: 0,
@@ -30,8 +30,8 @@ export function WhatWeDo() {
       }} transition={{
         duration: 0.6
       }} className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto">
-            <span className="text-[#030711]">Servi</span><span className="text-[#EA580C]">cios</span>
+          <h2 className="text-5xl md:text-6xl tracking-tight leading-[1.15] mb-6 font-bold max-w-4xl mx-auto text-[#030711]">
+            Servicios
           </h2>
           <p className="text-lg text-[#666666] max-w-2xl mx-auto">
             Explora nuestros servicios y impulsan tu negocio. Diseño, estrategia y automatización para crecer con eficiencia y resultados medibles.
@@ -39,7 +39,7 @@ export function WhatWeDo() {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
           const IconComponent = service.icon;
           return <motion.div key={service.id} initial={{
@@ -54,7 +54,7 @@ export function WhatWeDo() {
             duration: 0.6,
             delay: index * 0.1
           }}>
-                <Card className="h-full hover:shadow-2xl transition-shadow border-gray-100 hover:border-[#EA580C]/20">
+                <Card className="h-full flex flex-col hover:shadow-2xl transition-shadow border-gray-100 hover:border-[#EA580C]/20">
                   <CardHeader>
                     <div className="w-14 h-14 bg-[#EA580C]/10 rounded-2xl flex items-center justify-center mb-4">
                       <IconComponent className="w-7 h-7 text-[#EA580C]" />
@@ -64,14 +64,14 @@ export function WhatWeDo() {
                       {service.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1 flex flex-col justify-between">
                     <div className="space-y-2 mb-6">
                       {service.features.slice(0, 4).map((feature, idx) => <div key={idx} className="flex items-start gap-2">
                           <CheckCircle2 className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
                           <span className="text-sm text-[#030711]">{feature}</span>
                         </div>)}
                     </div>
-                    <Button variant="outline" className="w-full" asChild>
+                    <Button variant="outline" className="w-full mt-auto" asChild>
                       <a href={`/servicios#${service.id}`}>
                         Ver detalles
                         <ArrowRight className="ml-2 w-4 h-4" />

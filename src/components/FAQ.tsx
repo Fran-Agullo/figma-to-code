@@ -8,43 +8,27 @@ import {
 
 const faqs = [
   {
-    question: '¿Cuánto tiempo tarda en completarse un proyecto?',
-    answer: 'El tiempo de entrega depende de la complejidad del proyecto. Una landing page básica puede estar lista en 2-3 semanas, mientras que proyectos más complejos pueden tomar de 1 a 3 meses. Siempre trabajamos con plazos claros y te mantenemos informado del progreso.'
+    question: '¿Qué significa exactamente "Diseño Estratégico"?',
+    answer: 'No diseñamos solo interfaces; diseñamos resultados. Nuestro enfoque va más allá del UX/UI bonito. Empezamos con una auditoría de negocio (Growth Digital) para asegurar que cada decisión de diseño (App, Web o Plataforma) esté orientada a mejorar métricas clave como la conversión, la retención y el Lifetime Value (LTV) de tus usuarios.'
   },
   {
-    question: '¿Qué incluye el servicio de diseño web?',
-    answer: 'Nuestro servicio incluye diseño personalizado en Figma, desarrollo con código limpio y moderno, optimización SEO, diseño responsive para todos los dispositivos, y soporte post-lanzamiento. También incluimos hosting y dominio en planes superiores.'
+    question: '¿Podéis ayudarnos a optimizar un producto que ya tenemos (CRO/Growth)?',
+    answer: 'Sí, realizamos auditorías completas de productos existentes para identificar puntos de fricción y oportunidades de mejora. Implementamos estrategias de CRO (Conversion Rate Optimization) basadas en datos y pruebas A/B para maximizar el rendimiento de tu producto.'
   },
   {
-    question: '¿Puedo solicitar cambios después del lanzamiento?',
-    answer: 'Sí, todos nuestros planes incluyen un período de soporte donde puedes solicitar ajustes y mejoras. Además, ofrecemos planes de mantenimiento continuo para cambios regulares y actualizaciones de contenido.'
+    question: '¿Cómo incorporáis la IA y la Automatización en mis procesos?',
+    answer: 'Integramos soluciones de IA personalizadas para automatizar tareas repetitivas, mejorar la toma de decisiones y optimizar procesos. Desde chatbots inteligentes hasta sistemas de recomendación, implementamos tecnología de IA que se adapta a las necesidades específicas de tu negocio.'
   },
   {
-    question: '¿Trabajáis con clientes internacionales?',
-    answer: 'Absolutamente. Trabajamos con clientes de toda España y Latinoamérica. Nos adaptamos a diferentes zonas horarias y nos comunicamos principalmente por videollamada, email y herramientas de gestión de proyectos.'
-  },
-  {
-    question: '¿Qué tecnologías utilizáis?',
-    answer: 'Utilizamos tecnologías modernas y probadas como React, Next.js, Tailwind CSS, y TypeScript para el frontend. Para el backend trabajamos con Node.js, Supabase, y soluciones cloud escalables. Elegimos las mejores herramientas según las necesidades de cada proyecto.'
-  },
-  {
-    question: '¿Ofrecéis servicios de SEO y marketing digital?',
-    answer: 'Sí, además del desarrollo web, ofrecemos servicios de optimización SEO, estrategia de contenidos, y consultoría de marketing digital. Podemos ayudarte a aumentar tu visibilidad online y atraer más clientes a tu negocio.'
-  },
-  {
-    question: '¿Cuál es el proceso de trabajo?',
-    answer: 'Comenzamos con una reunión de descubrimiento para entender tus necesidades. Luego creamos diseños en Figma para tu aprobación, desarrollamos el sitio, realizamos pruebas exhaustivas, y finalmente lanzamos. Durante todo el proceso mantenemos comunicación constante contigo.'
-  },
-  {
-    question: '¿Qué métodos de pago aceptáis?',
-    answer: 'Aceptamos transferencias bancarias y pagos con tarjeta. Generalmente trabajamos con un sistema de pagos en fases: 50% al inicio del proyecto y 50% al finalizar. Para proyectos grandes podemos adaptar el plan de pagos a tus necesidades.'
+    question: '¿Cómo garantizáis que el diseño UX/UI funcione para el crecimiento?',
+    answer: 'Utilizamos metodologías de UX Research para entender profundamente a tus usuarios, realizamos pruebas de usabilidad continuas y medimos el impacto de cada decisión de diseño en métricas clave. Nuestro diseño está respaldado por datos, no solo por estética.'
   }
 ];
 
 export function FAQ() {
   return (
     <section className="py-24 px-6 lg:px-12 bg-white">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           whileInView={{ opacity: 1, y: 0 }} 

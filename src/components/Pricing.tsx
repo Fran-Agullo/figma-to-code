@@ -55,7 +55,7 @@ const plans = [
 export function Pricing() {
   return (
     <section id="pricing" className="py-24 px-6 lg:px-12 bg-[#f9f7f7]">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           whileInView={{ opacity: 1, y: 0 }} 
@@ -78,7 +78,7 @@ export function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative bg-white rounded-2xl p-8 shadow-lg ${
+              className={`relative bg-white rounded-2xl p-8 shadow-lg flex flex-col ${
                 plan.popular ? 'ring-2 ring-[#EA580C]' : ''
               }`}
             >
@@ -94,7 +94,7 @@ export function Pricing() {
                 <div className="text-4xl font-bold text-[#030711]">{plan.price}</div>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex-1">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-[#EA580C] flex-shrink-0 mt-0.5" />
@@ -104,7 +104,7 @@ export function Pricing() {
               </ul>
 
               <Button
-                className={`w-full ${
+                className={`w-full mt-auto ${
                   plan.popular
                     ? 'bg-[#EA580C] hover:bg-[#dc4e07] text-white'
                     : 'bg-[#030711] hover:bg-[#1e293b] text-white'

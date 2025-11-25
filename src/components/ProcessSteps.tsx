@@ -10,7 +10,7 @@ const steps = [
 export function ProcessSteps() {
   return (
     <section id="proceso" className="py-24 px-6 lg:px-12 bg-white">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="text-5xl tracking-tight leading-[1.15] max-w-3xl mx-auto mb-6">
             <span className="text-[#030711]">Soluciones </span><span className="text-[#EA580C]">escalables</span><span className="text-[#030711]">, visión </span><span className="text-[#EA580C]">360º</span>
