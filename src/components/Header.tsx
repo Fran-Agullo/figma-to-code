@@ -16,8 +16,8 @@ export function Header() {
     }} transition={{
       duration: 0.6,
       ease: 'easeOut'
-    }} className="fixed top-6 left-6 right-6 z-50" role="banner">
-        <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-[50px] py-[7px] rounded-[150px] w-full">
+    }} className="fixed top-6 left-0 right-0 z-50 px-6" role="banner">
+        <div className="backdrop-blur-xl bg-white/70 border border-white/20 shadow-lg shadow-black/5 box-border flex items-center justify-between px-6 sm:px-8 md:px-12 py-[7px] rounded-[150px] w-full max-w-[1400px] mx-auto">
           <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.08)] border-solid inset-0 pointer-events-none rounded-[150px]" />
 
           {/* Left Container - Logo */}
